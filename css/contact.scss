@@ -1,31 +1,31 @@
 @import 
 url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+@import "colors";
+// :root{
+//     --bg: #FCFCFC;
+//     --bg-section:  #FCFCFC;
+//     --color-headings: rgba(52, 73, 94,1.0);
+//     --color-text: #333333;
+//     --shadow: #9f9f9f;
+//     --webslingr: rgb(218, 218, 218);
+//     --button: #0F0F6D;
+//     --scroller: #b5b5b5;
+//     --hoverScroll: blue;
+// }
 
-:root{
-    --bg: #FCFCFC;
-    --bg-section:  #FCFCFC;
-    --color-headings: rgba(52, 73, 94,1.0);
-    --color-text: #333333;
-    --shadow: #9f9f9f;
-    --webslingr: rgb(218, 218, 218);
-    --button: #0F0F6D;
-    --scroller: #b5b5b5;
-    --hoverScroll: blue;
-}
-
-.darkmode{
-    --bg: #1c1c1c;
-    // --bg: black;
-    --bg-section: #1c1c1c;
-    // --bg-section: black;
-    --color-headings: #b5b5b5;
-    --color-text: #b5b5b5;
-    --shadow: #1c1c1c;
-    --webslingr: #161616;
-    --button: #2b2bff;
-    --scroller: #30ff00;
-    --hoverScroll: #00c6ff;
-}
+// .darkmode{
+//     --bg: #1c1c1c;
+//     // --bg: black;
+//     --bg-section: #1c1c1c;
+//     // --bg-section: black;
+//     --color-headings: #b5b5b5;
+//     --color-text: #b5b5b5;
+//     --shadow: #1c1c1c;
+//     --webslingr: #161616;
+//     --button: #2b2bff;
+//     --scroller: #30ff00;
+//     --hoverScroll: #00c6ff;
+// }
 
 
 html{
@@ -200,7 +200,8 @@ nav {
             background: #2b2bff;
             transition: all 0.5s;
             border-radius: 10px;
-            box-shadow: 0px 6px 15px #0000ff61;
+            box-shadow: 0 0 2em 0.5em var(--clr-neon);
+            // box-shadow: 0px 6px 15px #0000ff61;
             // padding: .5rem 3.5rem .5rem .5rem;
             padding-right: 4rem;
             
@@ -314,34 +315,7 @@ nav {
 
 
 
-@media (min-width:767px) {
-    // .inner-width p{
-    //     margin-left: 12vw;
-    // }
 
-    // .nameField, .emailField, .messageField{
-        
-    //     small{
-    //         margin-left: 3%;
-    //     }
-        
-    // }
-}
-
-
-@media (min-width:375px) {
-    // .inner-width p{
-    //     margin-left: 9vw;
-    // }
-
-    .nameField, .emailField, .messageField{
-        
-        small{
-            margin-left: 5%;
-        }
-        
-    }
-}
 
 
 html.transition,
@@ -353,4 +327,5 @@ html.transition *:after{
 }
 
 @import "footer";
+@import "mobile-contactMe";
 @import "backToTopButton";

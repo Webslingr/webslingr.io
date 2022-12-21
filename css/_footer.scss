@@ -1,15 +1,9 @@
 footer{
     background: var(--bg);
     padding: 60px 0;
-    // position: relative;
-    // height: 100px;
-    // margin-top: -100px;
-    // clear: both;
-    // text-align: center;
 }
 
 .footer-bottom{
-    // margin-top: 200px;
     max-width: 1300px;
     margin: auto;
     padding: 0 120px;
@@ -17,10 +11,6 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap-reverse;
-}
-
-.logo2{
-  width: 54px;
 }
 
 .social-media{
@@ -45,11 +35,42 @@ footer{
 
 .right-col{
   margin-top: 10%;
-}
 
-.right-col h6{
-  font-size: 45px;
-  color: var(--color-text);
+  h6{
+    font-size: 45px;
+    color: var(--color-text);
+  }
+
+
+  #contact{
+    padding: 12px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: indigo;
+    transition: all 0.5s;
+  
+    &:hover{
+      background: #2b2bff;
+      box-shadow: 0px 6px 15px #0000ff61;
+    }
+  }
+
+
+  p{
+    align-items: center;
+    color: var(--color-text);
+    margin: 30px 0;
+  
+    h7{
+      font-weight: bold;
+    }
+
+  }
+  
 }
 
 .border{
@@ -57,33 +78,4 @@ footer{
   height: 4px;
   margin-bottom: 4%;
   background: #fc5c65;
-}
-
-.right-col #contact{
-  padding: 12px 30px;
-  border-radius: 10px;
-  cursor: pointer;
-  border: 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  background-color: indigo;
-  transition: all 0.5s;
-
-  &:hover{
-    background: #2b2bff;
-    box-shadow: 0px 6px 15px #0000ff61;
-  }
-}
-
-.right-col p{
-  // display: flex;
-  // justify-content: center;
-  align-items: center;
-  color: var(--color-text);
-  margin: 30px 0;
-}
-
-.right-col p h7{
-  font-weight: bold;
 }

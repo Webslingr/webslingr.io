@@ -165,6 +165,9 @@ let navSliderOptions = {
       touchRatio: 0.2,
       slideToClickedSlide: true,
       direction: 'vertical',
+      
+
+
       on: {
         imagesReady: function(){
           this.el.classList.remove('loading');
@@ -175,6 +178,8 @@ let navSliderOptions = {
       }
     };
 let navSlider = new Swiper(navSliderSelector, navSliderOptions);
+
+
 
 // Matching sliders
 mainSlider.controller.control = navSlider;
