@@ -1,3 +1,40 @@
+html, body, section {
+  block-size: 100%;
+}
+
+// html {
+//   scroll-snap-type: y mandatory;
+// }
+
+// section {
+//   scroll-snap-align: start;
+//   scroll-snap-stop: always;
+  
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+
+p {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+}
+
+
 h2{
   color: var(--color-text);
   font-size: xx-large;
@@ -57,7 +94,12 @@ h2{
 } 
 
 
-//MOUSE ANIMATION//
+//Mouse Icon//
+
+a .mouse {
+  display: flex;
+  justify-content: center;
+}
 
 .mouse{
     width: 22px;

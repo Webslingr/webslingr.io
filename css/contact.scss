@@ -94,40 +94,6 @@ img{
     transition: all .5s;
 }
 
-
-
-nav {
-    width: 80%;
-    margin: auto;
-    min-height: 10vh;
-    padding: 3rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    ul {
-        display: flex;
-        justify-content: space-between;
-        flex: 1;
-        list-style: none;
-
-    }
-
-    h1{
-        font-size: 18px;
-        font-weight: 40;
-        color: var(--color-text);
-
-        #logo {
-            flex: 3;
-            position: relative;
-
-       
-        }
-    
-    }
-}
-
 .contact-section{
     background: var(--bg);
     padding: 80px 0;
@@ -326,6 +292,7 @@ html.transition *:after{
     transition-delay: 0 !important;
 }
 
+@import "header";
 @import "footer";
 @import "mobile-contactMe";
 @import "backToTopButton";

@@ -96,43 +96,8 @@ img{
 }
 
 
-
-nav {
-    width: 80%;
-    margin: auto;
-    min-height: 10vh;
-    padding: 3rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    ul {
-        display: flex;
-        justify-content: space-between;
-        flex: 1;
-        list-style: none;
-
-    }
-
-    h1{
-        font-size: 18px;
-        font-weight: 40;
-        color: var(--color-text);
-
-        #logo {
-            flex: 3;
-            position: relative;
-
-       
-        }
-    
-    }
-}
-
-
-
 section{
-    padding: 60px 0;
+    // padding: 60px 0;
     // margin-top: 100px;
     background: var(--bg-section);
     text-align: center;
@@ -211,7 +176,8 @@ section{
 
 //TECHNOLOGY
 
-.technologies {
+.technologies section {
+    flex-direction: column;
     position: relative;
     background-color: var(--bg);
     z-index: 5;
@@ -396,5 +362,6 @@ html.transition *:after{
 @import "hero";
 @import "project";
 @import "moreContent";
+@import "header";
 @import "footer";
 @import "mobile-dark";
