@@ -1,0 +1,62 @@
+//MEDIUM SCREEN
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+}
+
+
+//SMALL SCREEN
+
+@media only screen and (max-width: 900px) {
+
+.menu { 
+
+        display:none;
+    
+        position: absolute;
+    
+        background-color:teal;
+    
+        right: 0;
+    
+        left: 0;
+    
+        text-align: center;
+    
+        padding: 16px 0;
+    
+    }
+    
+    // .menu li:hover {
+    
+    //     display: inline-block;
+    
+    //     background-color:#4c9e9e;
+    
+    //     transition: 0.3s ease;
+    
+    // }
+    
+    // .menu li + li {
+    
+    //     margin-top: 12px;
+    
+    // }
+    
+    
+        nav input[type=checkbox]:checked {
+
+            display: block;
+        
+        }
+        
+        nav .hamburger {
+        
+            display: block;
+        
+        }
+    
+    
+
+}

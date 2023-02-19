@@ -15,6 +15,63 @@ html, body, section {
 //   justify-content: center;
 // }
 
+.hero {
+  position: relative;
+  background-color: var(--bg);
+  z-index: 5;
+  height: 100vh;
+}
+
+.nameHero{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: repeat(2, 1fr);
+}
+
+.nameHero img {
+grid-column: 2 / 2;
+grid-row: auto;
+width: 70%;
+z-index: 2;  
+}
+
+.name{
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr)
+  grid-column: 1 / 2;
+  font-size: xx-large;
+  font-weight: bold;
+  color: var(--color-text); 
+  text-align: left;
+  margin-left: 1.3em;
+  // position: absolute;
+  // top: 0; 
+  // left: -0.43em; 
+  bottom: 0; 
+  // right: 0; 
+  z-index: 2; 
+  line-height: 1.4em;
+  align-self: center;
+}
+
+.webslingr{
+  // grid-row: auto;
+  // grid-column: 1 / span 2;
+  // position: relative; 
+  font-size: 17vw;
+  // height: 100px; 
+  position: fixed;
+  // justify-content: center;  /* center p horizontally */
+  // align-items: center; 
+  z-index : 0;
+  line-height: 0.3em;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  text-shadow: 0 0 15px var(--webslingr);
+  color: var(--bg);
+  font-weight: 800;
+}
+
 
 p {
   animation-duration: 3s;

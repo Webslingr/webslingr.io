@@ -6,7 +6,7 @@
 //MEDIUM SCREEN
 
 
-@media (max-width:767px) {
+@media only screen and (min-width: 768px) {
   
     title{
         width: 95%;
@@ -31,7 +31,7 @@
 
 //SMALL SCREEN
 
-@media (max-width:500px) and (hover:disabled) {
+@media only screen and (min-width: 600px) and (hover:disabled) {
 
    .logo{
      padding-top: 40px;

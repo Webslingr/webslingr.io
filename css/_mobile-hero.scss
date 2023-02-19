@@ -1,0 +1,11 @@
+// Tablet  Size
+
+@media (max-width:768px) {
+    html, body, section {
+        block-size: 100%;
+    }
+
+    p {
+        display: none;
+    }
+}

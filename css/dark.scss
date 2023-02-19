@@ -176,13 +176,13 @@ section{
 
 //TECHNOLOGY
 
-.technologies section {
-    flex-direction: column;
-    position: relative;
-    background-color: var(--bg);
-    z-index: 5;
-    height: 100vh;
-}
+// .technologies section {
+//     flex-direction: column;
+//     position: relative;
+//     background-color: var(--bg);
+//     z-index: 5;
+//     height: 100vh;
+// }
 
 //GRID
 
@@ -353,9 +353,6 @@ html.transition *:after{
     transition-delay: 0 !important;
 }
 
-
-
-
 @import "preloader";
 @import "colors";
 @import "backToTopButton";
@@ -365,3 +362,4 @@ html.transition *:after{
 @import "header";
 @import "footer";
 @import "mobile-dark";
+@import "mobile-header";
