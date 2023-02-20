@@ -27,27 +27,43 @@
     <header>
       <nav>
         <h1 id="logo">Jevin Sunnyassy</h1>
-              <input type="checkbox" id="checkbox_toggle" />
-              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+              <!-- <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger" onclick="openNav()">&#9776;</label> -->
           <ul class="menu" id="myMenu"> 
-              <li class="list"><a href="#Techs">Technologies</a></li>
-              <li class="list"><a href="#Projects">Projects</a></li>
-              <li class="list"><a href="contact.html">Contact me</a></li>
-              <li>
-                
-                <div class="toggle-container">
+                <li class="list"><a href="#Techs" class="nav-link">Technologies</a></li>
+                <li class="list"><a href="#Projects" class="nav-link">Projects</a></li>
+                <li class="list"><a href="contact.html" class="nav-link">Contact me</a></li>
+                <li>
                   
-                  <button id="dark-mode-toggle" class="dark-mode-toggle">
-                    <span data-tooltip="Toggle theme">
-                    <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
-                    </span>  
-                  </button>
+                  <!-- <div class="toggle-container">
+                    
+                    <button id="dark-mode-toggle" class="dark-mode-toggle">
+                      <span data-tooltip="Toggle theme">
+                      <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+                      </span>  
+                    </button>
 
-                </div>
-                
-              </li>
+                  </div> -->
+                  
+                </li>
               
           </ul>  
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+
+          <div class="toggle-container">
+                    
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+              <span data-tooltip="Toggle theme">
+              <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+              </span>  
+            </button>
+
+          </div>
           
         </nav>             
     </header>
@@ -266,6 +282,7 @@
         
         <script src="js/darkmode.js"></script>
         <script src="js/swiper.min.js"></script>
+        <script src="js/navbar.js"></script>
         <script src="js/scrollToTop.js"></script>
 
   </body>

@@ -252,15 +252,81 @@ nav h1 #logo {
   flex: 3;
   position: relative;
 }
-nav input[type=checkbox] {
-  display: none;
-}
 nav .hamburger {
   display: none;
   font-size: 24px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+nav .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  border-radius: 20px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-text);
+}
+
+#logo {
+  margin-left: 69px;
+}
+#logo h1 {
+  font-size: 18px;
+  font-weight: 40;
+  color: var(--color-text);
+  margin-top: 3%;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+
+[data-tooltip]::after {
+  position: absolute;
+  width: 100px;
+  left: calc(50% - 60px);
+  top: 125%;
+  text-align: center;
+  box-sizing: border-box;
+  content: attr(data-tooltip);
+  color: var(--bg);
+  background: var(--color-text);
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: ease-in-out opacity 0.3s, transform 0.2s;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  z-index: 100;
+  top: 32px;
+  right: 30px;
+  color: var(--color-text);
+  border: 0px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  transition: 750ms;
 }
 
 footer {
