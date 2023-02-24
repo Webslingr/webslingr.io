@@ -7,8 +7,6 @@
   --shadow: #9f9f9f;
   --webslingr: rgb(218, 218, 218);
   --button: #0F0F6D;
-  --scroller: #b5b5b5;
-  --hoverScroll: blue;
 }
 
 .darkmode {
@@ -19,8 +17,6 @@
   --webslingr: #161616;
   --button: #2929ff;
   --shadow: #1c1c1c;
-  --scroller: #30ff00;
-  --hoverScroll: #00c6ff;
   --clr-neon: hsla(240, 100%, 58%, 0.694);
   --clr-bg: hsl(323 21% 16%);
   --bootstrap: #5F16F0;
@@ -332,6 +328,7 @@ button::-moz-focus-inner {
 footer {
   background: var(--bg);
   padding: 60px 0;
+  margin-top: 14%;
 }
 
 .footer-bottom {

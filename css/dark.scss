@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 
-$transition-duration: 2s;
+// $transition-duration: 2s;
 $path-length: 157px; // Retrieved using SVG's getTotalLength()
 
 html{
@@ -39,7 +39,7 @@ section{
     text-align: left;
     margin-left: 8vw;
     margin-bottom: 10%;
-    margin-top: 10%;
+    // margin-top: 10%;
     font-size: 50px;
     color: var(--color-text);
 } 
@@ -47,44 +47,32 @@ section{
 
 //NAME HERO
 
-.hero {
-    position: relative;
-    background-color: var(--bg);
-    z-index: 5;
-    height: 100vh;
-}
+// .hero {
+//     // display: flex;
+//     // flex-direction: column;
+//     // justify-content: center;
+//     position: relative;
+//     background-color: var(--bg);
+//     z-index: 5;
+//     // height: 100vh;
+// }
 
-.nameHero{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: repeat(2, 1fr);
-}
+// .hero img {
+//     width: 40%;
+// }
 
-.nameHero img {
-  grid-column: 2 / 2;
-  grid-row: auto;
-  width: 70%;
-  z-index: 2;  
-}
+// .nameHero{
+//     display: grid;
+//     grid-template-columns: repeat(1, 1fr);
+//     // grid-template-rows: repeat(2, 1fr);
+// }
 
-.name{
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr)
-    grid-column: 1 / 2;
-    font-size: xx-large;
-    font-weight: bold;
-    color: var(--color-text); 
-    text-align: left;
-    margin-left: 1.3em;
-    // position: absolute;
-    // top: 0; 
-    // left: -0.43em; 
-    bottom: 0; 
-    // right: 0; 
-    z-index: 2; 
-    line-height: 1.4em;
-    align-self: center;
-}
+// .nameHero img {
+//   grid-column: 1 / 1;
+//   grid-row: auto;
+//   width: 70%;
+//   z-index: 2;  
+// }
 
 .webslingr{
     // grid-row: auto;
@@ -196,7 +184,7 @@ section{
     position: relative;
     // margin-top: 20vh;
     left: 30%;
-    width: 70%;
+    width: 7vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--bootstrap);
@@ -211,7 +199,7 @@ section{
     // margin-top: 40vh;
     bottom: 80%;
     left: 20%;
-    width: 70%;
+    width: 7vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--html5);
@@ -224,7 +212,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 35%;
-    width: 70%;
+    width: 7vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--css3);
@@ -238,7 +226,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 25%;
-    width: 70%;
+    width: 7vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--javascript);
@@ -251,7 +239,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 45%;
-    width: 90%;
+    width: 7vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--php);
@@ -261,17 +249,17 @@ section{
 
 //SCROLLER
 
-::-webkit-scrollbar{
-    width: 0px;
-}
+// ::-webkit-scrollbar{
+//     width: 0px;
+// }
 
-::-webkit-scrollbar-thumb{
-    background: var(--scroller);
-}
+// ::-webkit-scrollbar-thumb{
+//     background: var(--scroller);
+// }
 
-::-webkit-scrollbar-thumb:hover{
-    background: var(--hoverScroll);
-}
+// ::-webkit-scrollbar-thumb:hover{
+//     background: var(--hoverScroll);
+// }
 
 
 
@@ -292,5 +280,8 @@ html.transition *:after{
 @import "moreContent";
 @import "header";
 @import "footer";
+
+// Mobile CSS
 @import "mobile-dark";
 @import "mobile-header";
+@import "mobile-hero";
