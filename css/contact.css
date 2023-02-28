@@ -24,6 +24,12 @@
   --css3: #1830DA;
   --javascript: #F0D800;
   --php: #6579AA;
+  --mysql: #0379BB;
+  --node: #168F02;
+  --react: #09CEF9;
+  --nginx: #038B52;
+  --apache: #E32A2A;
+  --dotnet: #6113FF;
 }
 
 html {
@@ -241,7 +247,7 @@ nav .list:hover::before a {
 }
 nav h1 {
   font-size: 18px;
-  font-weight: 40;
+  font-weight: bold;
   color: var(--color-text);
 }
 nav h1 #logo {

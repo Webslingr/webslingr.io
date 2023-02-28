@@ -1,12 +1,7 @@
-@media (max-width:992px) {
-
-}
-
-
 //MEDIUM SCREEN
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   
     title{
         width: 95%;
@@ -31,7 +26,7 @@
 
 //SMALL SCREEN
 
-@media only screen and (min-width: 600px) and (hover:disabled) {
+@media only screen and (max-width: 767px) {
 
    .logo{
      padding-top: 40px;
@@ -39,7 +34,8 @@
    }
 
     h3{
-      font-size: 40px;
+      width: 96%;
+      font-size: 30px;
       margin-top: 30vh;
       margin-bottom: 12%;
       text-align: center;
