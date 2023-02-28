@@ -139,7 +139,7 @@ article .detail {
   }
   
   p {
-    transform: translateY(-50px);
+    transform: translateY(-30px);
     color: white;
     opacity: 0;
     margin-left: 225px;
@@ -152,12 +152,12 @@ article:hover .detail {
 
   h4{
     opacity: 1;
-    transform: translateY(50px);
+    transform: translateY(30px);
   }
 
   p {
     opacity: 1;
-    transform: translateY(-100px);
+    transform: translateY(-50px);
   }
 }
 
