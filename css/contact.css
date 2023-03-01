@@ -30,6 +30,9 @@
   --nginx: #038B52;
   --apache: #E32A2A;
   --dotnet: #6113FF;
+  --wordpress: #646464;
+  --drupal: #06A5FF;
+  --postman: #FF5C00;
 }
 
 html {

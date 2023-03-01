@@ -47,12 +47,12 @@ h3 {
   font-weight: 800;
 }
 
-.frontend {
+.frontend, .other {
   display: flex;
   margin-top: 340px;
   justify-content: space-evenly;
 }
-.frontend p {
+.frontend p, .other p {
   align-items: center;
   font-size: 30px;
   font-weight: 500;
@@ -145,7 +145,6 @@ h3 {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 40px;
   transform-style: preserve-3d;
-  margin-bottom: 340px;
 }
 
 .grid-container2 p {
@@ -213,6 +212,114 @@ h3 {
 }
 .tech11 img {
   box-shadow: 0 0 0.9em 0.1em var(--dotnet);
+  border-radius: 20px;
+}
+
+.grid-container3 {
+  display: grid;
+  width: 40%;
+  justify-content: end;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
+  transform-style: preserve-3d;
+  margin-bottom: 340px;
+}
+
+.grid-container3 p {
+  color: var(--color-text);
+  margin-top: 5%;
+  font-weight: bold;
+  font-size: large;
+}
+
+.tech6 {
+  position: relative;
+  left: 30%;
+  width: 7vw;
+}
+.tech6 img {
+  box-shadow: 0 0 0.9em 0.1em var(--mysql);
+  border-radius: 20px;
+}
+
+.tech7 {
+  position: relative;
+  bottom: 80%;
+  left: 20%;
+  width: 7vw;
+}
+.tech7 img {
+  box-shadow: 0 0 0.9em 0.1em var(--node);
+  border-radius: 20px;
+}
+
+.tech8 {
+  position: relative;
+  left: 35%;
+  width: 7vw;
+}
+.tech8 img {
+  box-shadow: 0 0 0.9em 0.1em var(--nginx);
+  border-radius: 20px;
+}
+
+.tech9 {
+  position: relative;
+  left: 25%;
+  width: 7vw;
+}
+.tech9 img {
+  box-shadow: 0 0 0.9em 0.1em var(--apache);
+  border-radius: 20px;
+}
+
+.tech10 {
+  position: relative;
+  left: 45%;
+  width: 7vw;
+}
+.tech10 img {
+  box-shadow: 0 0 0.9em 0.1em var(--php);
+  border-radius: 20px;
+}
+
+.tech11 {
+  position: relative;
+  left: 45%;
+  width: 7vw;
+}
+.tech11 img {
+  box-shadow: 0 0 0.9em 0.1em var(--dotnet);
+  border-radius: 20px;
+}
+
+.tech12 {
+  position: relative;
+  left: 45%;
+  width: 7vw;
+}
+.tech12 img {
+  box-shadow: 0 0 0.9em 0.1em var(--wordpress);
+  border-radius: 20px;
+}
+
+.tech13 {
+  position: relative;
+  left: 45%;
+  width: 7vw;
+}
+.tech13 img {
+  box-shadow: 0 0 0.9em 0.1em var(--drupal);
+  border-radius: 20px;
+}
+
+.tech14 {
+  position: relative;
+  left: 45%;
+  width: 7vw;
+}
+.tech14 img {
+  box-shadow: 0 0 0.9em 0.1em var(--postman);
   border-radius: 20px;
 }
 
@@ -316,6 +423,9 @@ html.transition *:after {
   --nginx: #038B52;
   --apache: #E32A2A;
   --dotnet: #6113FF;
+  --wordpress: #646464;
+  --drupal: #06A5FF;
+  --postman: #FF5C00;
 }
 
 #back-to-top-btn {
@@ -629,7 +739,7 @@ h2 {
   }
 }
 .projects {
-  margin-top: 60%;
+  margin-top: 120%;
 }
 
 .title {
