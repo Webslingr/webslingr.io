@@ -116,6 +116,31 @@ a {
     background: var(--tagjavascript);
   }
 
+  .tag4 {
+    background: var(--tagphp);
+  }
+
+  .tag5 {
+    background: var(--tagreact);
+  }
+
+  .tag6 {
+    background: var(--tagbootstrap);
+  }
+
+  .tag7 {
+    background: var(--tagelectron);
+  }
+
+  .tag8 {
+    background: white;
+    color: var(--taglaravel);
+  }
+
+  .tag9 {
+    background: var(--tagwordpress);
+  }
+
 }
 
 .card:hover .tags { 
@@ -126,19 +151,19 @@ a {
     color: white;
   }
 
-  .tag1 {
-    background: var(--taghtml5);
-    // box-shadow: 0 0 0.9em 0.1em var(--html5);
-  }
+  // .tag1 {
+  //   background: var(--taghtml5);
+  //   // box-shadow: 0 0 0.9em 0.1em var(--html5);
+  // }
 
-  .tag2 {
-    background: var(--tagscss);
-    // box-shadow: 0 0 0.9em 0.1em var(--scss);
-  }
+  // .tag2 {
+  //   background: var(--tagscss);
+  //   // box-shadow: 0 0 0.9em 0.1em var(--scss);
+  // }
 
-  .tag3 {
-    background: var(--tagjavascript);
-    // box-shadow: 0 0 0.9em 0.1em var(--javascript);
+  .tag8 {
+    color: var(--taglaravel);
+    border: 1px solid var(--taglaravel);
   }
 
 }

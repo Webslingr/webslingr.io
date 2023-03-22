@@ -1,0 +1,40 @@
+//MEDIUM SCREEN
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+
+    .cards-wrapper {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+        padding: 4rem;
+        margin: 0 auto;
+    }
+}
+
+
+//SMALL SCREEN
+
+@media only screen and (max-width: 767px) {
+    
+    .cards-wrapper {
+        padding: 4rem 2rem;
+    }
+
+    .card-grid-space .num {
+        font-size: 2em;
+    }
+
+    .card {
+        max-width: calc(100vw - 4rem);
+    }
+
+    .info {
+        display: block;
+        text-align: center;
+    }
+    .info h1 {
+        margin: 0;
+    }
+}
