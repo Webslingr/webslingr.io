@@ -7,6 +7,10 @@
   --shadow: #9f9f9f;
   --webslingr: rgb(218, 218, 218);
   --button: #0F0F6D;
+  --taghtml5: #F05000;
+  --tagscss: rgb(254, 128, 149);
+  --tagcss3: #1830DA;
+  --tagjavascript: #F0D800;
 }
 
 .darkmode {
@@ -21,6 +25,7 @@
   --clr-bg: hsl(323 21% 16%);
   --bootstrap: #5F16F0;
   --html5: #F05000;
+  --scss: rgb(254, 128, 149);
   --css3: #1830DA;
   --javascript: #F0D800;
   --php: #6579AA;
@@ -185,6 +190,18 @@ img {
   resize: none;
 }
 
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+input:valid {
+  border: 2px solid var(--color-text);
+}
+
 html.transition,
 html.transition *,
 html.transition *:before,
@@ -322,7 +339,7 @@ button::-moz-focus-inner {
 .dark-mode-toggle {
   position: fixed;
   z-index: 100;
-  top: 32px;
+  top: 9%;
   right: 30px;
   color: var(--color-text);
   border: 0px solid currentColor;
@@ -374,6 +391,7 @@ footer {
   margin-top: 10%;
 }
 .right-col h6 {
+  margin: 0;
   font-size: 45px;
   color: var(--color-text);
 }

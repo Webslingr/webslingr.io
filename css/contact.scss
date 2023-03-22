@@ -212,7 +212,7 @@ img{
 //     margin-right: 5%;
 // }
 
-.name, .email, .message{
+.name, .email, .message {
     // display: flex;
     background: var(--bg);
     color: var(--color-text);
@@ -260,6 +260,17 @@ img{
     // margin-bottom: 13vh;
 }
 
+input:invalid {
+    border: 2px dashed red;
+}
+  
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
+  
+input:valid {
+    border: 2px solid var(--color-text);
+}
 
 
 // input:focus {

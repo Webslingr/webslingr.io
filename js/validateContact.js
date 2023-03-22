@@ -14,11 +14,13 @@ function validateName(){
 function validateEmail(){
     if ($("#txtEmail").val() == ""){
         $("#txtEmail").css("border-color", "red");
-        $("#txtEmailError").text("🐶 \u00E9 Please enter your email");
+        $("#txtEmailError").text("Please enter your email");
         return false;
     }
+    
     else{
         var emailRegEx=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; 
+    
         if (!emailRegEx.test($("#txtEmail").val())){
             $("#txtEmail").css("border-color", "red");
             $("#txtEmailError").text("Wrong email format");

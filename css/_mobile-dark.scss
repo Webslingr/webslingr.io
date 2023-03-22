@@ -61,7 +61,20 @@
         margin-top: 12%;
     }
 
+    // Technology
 
+    .other {
+      margin-bottom: 140%;
+    }
+
+    .frontend, .other {
+     flex-direction: column;
+    }
+
+    .tech1, .tech2, .tech3, .tech4, .tech5, .tech6, .tech7, .tech8, .tech9, .tech10
+    .tech11, .tech12, .tech13, .tech14 {
+      width: 17vw;
+    }
 
 
     //PROJECTS

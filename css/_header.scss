@@ -107,6 +107,8 @@ nav {
 //Logo
 #logo{
     margin-left: 69px;
+    // margin-left: 40%;
+    // margin-right: 20%;
 
     h1{
     font-size: 18px;
@@ -159,7 +161,8 @@ button::-moz-focus-inner {
 .dark-mode-toggle {
     position: fixed;
     z-index: 100;
-    top: 32px;
+    // top: 32px;
+    top: 9%;
     right: 30px;
     color: var(--color-text);
     border: 0px solid currentColor;

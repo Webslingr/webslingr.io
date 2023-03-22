@@ -19,6 +19,10 @@
         margin-left: 140px;
         margin-top: 50px;
     }
+
+    .dark-mode-toggle {
+        right: 0;
+    }
 }
 
 
@@ -91,5 +95,9 @@
     
     .hamburger.active {
         margin-left: 140px;
+    }
+
+    #dark-mode-toggle {
+        right: 0;
     }
 }
