@@ -167,6 +167,7 @@ section{
 .frontend, .other {
     display: flex;
     margin-top: 340px;
+    margin-bottom: 150px;
     justify-content: space-evenly;
 
     p {
@@ -178,14 +179,22 @@ section{
 }
 
 .grid-container {  
-    display: grid;
+    // display: grid;
     // width: 40%;
+    // grid-template-columns: repeat(4, 1fr);
+    // row-gap: 40px;
+    // column-gap: 40px;
+    // transform-style: preserve-3d;
+    // // margin-top: 340px;
+    // margin-bottom: 340px;
+    display: grid;
+    width: 40%;
+    justify-content: end;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 40px;
-    column-gap: 40px;
     transform-style: preserve-3d;
     // margin-top: 340px;
-    margin-bottom: 340px;
+    margin-bottom: 40px;
 }
 
 .grid-container p {
@@ -199,8 +208,8 @@ section{
     // position: absolute;
     position: relative;
     // margin-top: 20vh;
-    left: 30%;
-    width: 7vw;
+    left: 0;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--bootstrap);
@@ -215,7 +224,7 @@ section{
     // margin-top: 40vh;
     bottom: 80%;
     left: 20%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--html5);
@@ -228,7 +237,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 35%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--css3);
@@ -242,7 +251,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 25%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--javascript);
@@ -255,7 +264,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 45%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--react);
@@ -268,6 +277,7 @@ section{
 .backend {
     display: flex;
     // margin-top: 340px;
+    margin-bottom: 150px;
     justify-content: space-evenly;
 
     p {
@@ -286,7 +296,7 @@ section{
     row-gap: 40px;
     transform-style: preserve-3d;
     // margin-top: 340px;
-    // margin-bottom: 340px;
+    margin-bottom: 340px;
 }
 
 .grid-container2 p {
@@ -301,7 +311,7 @@ section{
     position: relative;
     // margin-top: 20vh;
     left: 30%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--mysql);
@@ -316,7 +326,7 @@ section{
     // margin-top: 40vh;
     bottom: 80%;
     left: 20%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--node);
@@ -329,7 +339,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 35%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--nginx);
@@ -343,7 +353,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 25%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--apache);
@@ -356,7 +366,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 45%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--php);
@@ -369,7 +379,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 45%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--dotnet);
@@ -397,93 +407,93 @@ section{
     font-size: large;
 }
 
-.tech6 {
-    // position: absolute;
-    position: relative;
-    // margin-top: 20vh;
-    left: 30%;
-    width: 7vw;
+// .tech6 {
+//     // position: absolute;
+//     position: relative;
+//     // margin-top: 20vh;
+//     left: 30%;
+//     width: 105px;
 
-    img {
-        box-shadow: 0 0 0.9em 0.1em var(--mysql);
-        border-radius: 20px;
-    }
+//     img {
+//         box-shadow: 0 0 0.9em 0.1em var(--mysql);
+//         border-radius: 20px;
+//     }
 
-}
+// }
 
-.tech7 {
-    // position: absolute;
-    position: relative;
-    // margin-top: 40vh;
-    bottom: 80%;
-    left: 20%;
-    width: 7vw;
+// .tech7 {
+//     // position: absolute;
+//     position: relative;
+//     // margin-top: 40vh;
+//     bottom: 80%;
+//     left: 20%;
+//     width: 105px;
 
-    img {
-        box-shadow: 0 0 0.9em 0.1em var(--node);
-        border-radius: 20px;
-    }
-}
+//     img {
+//         box-shadow: 0 0 0.9em 0.1em var(--node);
+//         border-radius: 20px;
+//     }
+// }
 
-.tech8 {
-    // position: absolute;
-    position: relative;
-    // margin-top: 40vh;
-    left: 35%;
-    width: 7vw;
+// .tech8 {
+//     // position: absolute;
+//     position: relative;
+//     // margin-top: 40vh;
+//     left: 35%;
+//     width: 105px;
 
-    img {
-        box-shadow: 0 0 0.9em 0.1em var(--nginx);
-        border-radius: 20px;
-    }
-}
+//     img {
+//         box-shadow: 0 0 0.9em 0.1em var(--nginx);
+//         border-radius: 20px;
+//     }
+// }
 
 
-.tech9 {
-    // position: absolute;
-    position: relative;
-    // margin-top: 40vh;
-    left: 25%;
-    width: 7vw;
+// .tech9 {
+//     // position: absolute;
+//     position: relative;
+//     // margin-top: 40vh;
+//     left: 25%;
+//     width: 105px;
 
-    img {
-        box-shadow: 0 0 0.9em 0.1em var(--apache);
-        border-radius: 20px;
-    }
-}
+//     img {
+//         box-shadow: 0 0 0.9em 0.1em var(--apache);
+//         border-radius: 20px;
+//     }
+// }
 
-.tech10 {
-    // position: absolute;
-    position: relative;
-    // margin-top: 40vh;
-    left: 45%;
-    width: 7vw;
+// .tech10 {
+//     // position: absolute;
+//     position: relative;
+//     // margin-top: 40vh;
+//     left: 45%;
+//     width: 105px;
 
-    img {
-        box-shadow: 0 0 0.9em 0.1em var(--php);
-        border-radius: 20px;
-    }
-}
+//     img {
+//         box-shadow: 0 0 0.9em 0.1em var(--php);
+//         border-radius: 20px;
+//     }
+// }
 
-.tech11 {
-    // position: absolute;
-    position: relative;
-    // margin-top: 40vh;
-    left: 45%;
-    width: 7vw;
+// .tech11 {
+//     // position: absolute;
+//     position: relative;
+//     // margin-top: 40vh;
+//     left: 45%;
+//     width: 105px;
 
-    img {
-        box-shadow: 0 0 0.9em 0.1em var(--dotnet);
-        border-radius: 20px;
-    }
-}
+//     img {
+//         box-shadow: 0 0 0.9em 0.1em var(--dotnet);
+//         border-radius: 20px;
+//     }
+// }
 
 .tech12 {
     // position: absolute;
     position: relative;
     // margin-top: 40vh;
     left: 45%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--wordpress);
@@ -496,7 +506,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 45%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--drupal);
@@ -509,7 +519,7 @@ section{
     position: relative;
     // margin-top: 40vh;
     left: 45%;
-    width: 7vw;
+    width: 105px;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--postman);

@@ -19,6 +19,8 @@
 @media only screen and (max-width: 767px) {
     
     .cards-wrapper {
+        display: flex;
+        flex-direction: column;
         padding: 4rem 2rem;
     }
 
@@ -36,5 +38,16 @@
     }
     .info h1 {
         margin: 0;
+    }
+
+    .project-link {
+        font-size: 180%;
+        margin-top: 8%;
+       // font-weight: 2200;
+        // margin-left: -16%;
+        color: var(--color-text);
+        position:relative;
+        padding: 8px;
+        display: inline-block;    
     }
 }

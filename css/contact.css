@@ -345,7 +345,6 @@ button::-moz-focus-inner {
 .dark-mode-toggle {
   position: fixed;
   z-index: 100;
-  top: 9%;
   right: 30px;
   color: var(--color-text);
   border: 0px solid currentColor;
@@ -364,7 +363,7 @@ footer {
 }
 
 .footer-bottom {
-  max-width: 1300px;
+  max-width: 2000px;
   margin: auto;
   padding: 0 120px;
   display: flex;
@@ -394,7 +393,7 @@ footer {
 }
 
 .right-col {
-  margin-top: 10%;
+  margin-top: 80px;
 }
 .right-col h6 {
   margin: 0;

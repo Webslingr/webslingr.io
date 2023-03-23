@@ -35,7 +35,8 @@
         position: fixed;
         // left: -100%;
         right: 100%;
-        top: .1rem;
+        // top: .1rem;
+        top: -17px;
         flex-direction: column;
         background-color: var(--bg-section);
         width: 100%;
@@ -48,7 +49,8 @@
     }
 
     .menu.active {
-        left: 0;
+        right: 0;
+        touch-action: none; // Prevents scrolling on active menu
     }
 
 
@@ -80,6 +82,7 @@
         display: block;
         cursor: pointer;
         z-index: 999;
+        margin-left: 120px;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -95,10 +98,11 @@
     }
     
     .hamburger.active {
-        margin-left: 140px;
+        margin-left: 170px;
     }
 
     #dark-mode-toggle {
-        right: 0;
+        top: 43px;
+        right: 13px;
     }
 }
