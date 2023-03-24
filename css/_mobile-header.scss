@@ -30,6 +30,11 @@
 
 @media only screen and (max-width: 767px) {
 
+    nav {
+        // width: 60%;
+        margin-left: 5em;
+    }
+
     .menu { 
         overflow-y: hidden;
         position: fixed;
@@ -82,7 +87,7 @@
         display: block;
         cursor: pointer;
         z-index: 999;
-        margin-left: 120px;
+        // margin-left: 120px;
     }
 
     .hamburger.active .bar:nth-child(2) {
