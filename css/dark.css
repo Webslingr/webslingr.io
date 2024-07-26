@@ -47,6 +47,14 @@ h3 {
   font-weight: 800;
 }
 
+#container canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .frontend, .other {
   display: flex;
   margin-top: 340px;
