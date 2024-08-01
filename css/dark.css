@@ -35,6 +35,18 @@ h3 {
   color: var(--color-text);
 }
 
+#container3D {
+  position: fixed;
+}
+
+.scroll-area {
+  height: 500vh;
+}
+
+.website {
+  position: relative;
+}
+
 .webslingr {
   font-size: 17vw;
   position: fixed;
