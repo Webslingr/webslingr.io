@@ -3,6 +3,13 @@
   --transition-time: 0.5s;
 }
 
+
+//Resets css style which helped avoid unknown padding between divs
+* {
+  margin: 0;
+  padding: 0;
+}
+
 // .projects{
 //     margin-top: 120%;
 // }
@@ -18,13 +25,19 @@ a {
   color: inherit;
 }
 
+
+.projects {
+  background: var(--bg-section);
+  text-align: center;
+}
+
 .cards-wrapper {
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4rem;
-  padding: 4rem;
+  // padding: 4rem;
   margin: 0 auto;
   // width: max-content;
 }

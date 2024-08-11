@@ -28,11 +28,11 @@
 
       <!-- Navigation Bar -->
       <nav>
-        <h1 id="logo">Webslingr.</h1>
+        <h1 id="logo" style="cursor: default; color: #b5b5b5;">Webslingr.</h1>
           <ul class="menu" id="myMenu"> 
-                <li class="list"><a href="#Techs" class="nav-link">Technologies</a></li>
-                <li class="list"><a href="#Projects" class="nav-link">Projects</a></li>
-                <li class="list"><a href="contact.html" class="nav-link">Contact me</a></li>
+                <li class="list"><a href="#Techs" class="nav-link" style="color: #b5b5b5;">Technologies</a></li>
+                <li class="list"><a href="#Projects" class="nav-link" style="color: #b5b5b5;">Projects</a></li>
+                <li class="list"><a href="contact.html" class="nav-link" style="color: #b5b5b5;">Contact me</a></li>
           </ul>  
 
           <div class="hamburger">
@@ -54,9 +54,9 @@
         </nav>             
     </header>
 
-    <section>  
-      <div class="container" id ="container3D">
-
+    <!-- <section>   --> // breaking scrolling
+      <div class="container" class="container3D" id ="container3D">
+        <canvas id="canvas"></canvas>
 
         <!-- <div class= "intro">
         <div class= "title">
@@ -94,325 +94,331 @@
 
       </div>
 
-    </section>
+      <div class="scroll-area">
 
-    <section>
-
-      <div class="name" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="300">
-        <p>Hello there! &#x1F44B;</p>
-        <p>My Name is Jevin Sunnyassy.</p>
-        <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="100">But you can call me Jason.</p>
       </div>
 
-    </section>
+    <!-- </section> -->
 
-    <!-- TECHNOLOGIES SECTION -->
+    <div class="website">
+      <div class="namer">
 
-    <div class="technologies">
-      <section>
-
-        <div id="Techs"><h3>Technologies Learned</h3> </div>
-        
-        <!-- <div class="grid-container">
-          <div class="grid-item1"><span id="pills">HTML5</span></div>
-          <div class="grid-item2"><span id="pills">CSS3</span></div>
-          <div class="grid-item3"><span id="pills">SCSS</span></div>
-          <div class="grid-item4"><span id="pills">Wordpress</span></div>
-          <div class="grid-item5"><span id="pills">Git</span></div>
-          <div class="grid-item6"><span id="pills">PHP</span></div>
-        </div>  -->
-        <!-- <div class="parallax__group hero-container">
-          <div class="parallax__layer sky">HTML5</div>
-          <div class="parallax__layer bushes">CSS3</div>
-          <div class="parallax__layer water">SCSS</div>
-          <div class="parallax__layer people1">Wordpress</div>
-          <div class="parallax__layer people2">Git</div>
-          <div class="parallax__layer people3">PHP</div>
-
-          </div> -->
-
-          <div class="frontend">
-            <div>
-              <p data-aos="fade-right" data-aos-duration="500">Frontend</p>
-            </div>
-            
-            <div class="grid-container">
-              <div class="rellax tech1" data-rellax-percentage="0.8" data-rellax-speed="1" data-rellax-zindex="5" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-center">
-                <img src="./images/bootstrap.svg" class="entity-img" />
-                <p>Bootstrap</p>
-              </div>
-              <div class="rellax tech2" data-rellax-percentage="0.9" data-rellax-speed="1.5" data-rellax-zindex="9" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
-                <img src="./images/html5.svg" class="entity-img" />
-                <p>HTML5</p>
-              </div>
-              <div class="rellax tech3" data-rellax-percentage="1.0" data-rellax-speed="1" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="bottom-center">
-                <img src="./images/css3.svg" class="entity-img" />
-                <p>CSS3</p>
-              </div>
-              <div class="rellax tech4" data-rellax-percentage="0.7" data-rellax-speed="1.2" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
-                <img src="./images/javascript.svg" class="entity-img" />
-                <p>JavaScript</p>
-              </div>
-              <div class="rellax tech5" data-rellax-percentage="0.5" data-rellax-speed="1" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
-                <img src="./images/react.svg" class="entity-img" />
-                <p>React JS</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="backend">
-            <div>
-              <p data-aos="fade-right" data-aos-duration="500">backend</p>
-            </div>
-
-            <div class="grid-container2">
-              <div class="rellax tech6" data-rellax-percentage="0.5" data-rellax-speed="1" data-rellax-zindex="5" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-center">
-                <img src="./images/mysql.svg" class="entity-img" />
-                <p>MySQL</p>
-              </div>
-              <div class="rellax tech7" data-rellax-percentage="0.8" data-rellax-speed="1.5" data-rellax-zindex="9" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
-                <img src="./images/node.svg" class="entity-img" />
-                <p>NodeJS</p>
-              </div>
-              <div class="rellax tech8" data-rellax-percentage="1.0" data-rellax-speed="1" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="bottom-center">
-                <img src="./images/nginx.svg" class="entity-img" />
-                <p>NGINX</p>
-              </div>
-              <div class="rellax tech9" data-rellax-percentage="0.4" data-rellax-speed="1.2" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
-                <img src="./images/apache.svg" class="entity-img" />
-                <p>Apache</p>
-              </div>
-              <div class="rellax tech10" data-rellax-percentage="0.3" data-rellax-speed="1" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
-                <img src="./images/php.svg" class="entity-img" />
-                <p>PHP</p>
-              </div>
-              <div class="rellax tech11" data-rellax-percentage="0.5" data-rellax-speed="1.4" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
-                <img src="./images/dotnet.svg" class="entity-img" />
-                <p>.NET Core</p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="other">
-            <div>
-              <p data-aos="fade-right" data-aos-duration="1000">Other Tools</p>
-            </div>
-            
-            <div class="grid-container3">
-              <div class="rellax tech12" data-rellax-percentage="0.8" data-rellax-speed="1" data-rellax-zindex="5" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-center">
-                <img src="./images/wordpress.svg" class="entity-img" />
-                <p>WordPress</p>
-              </div>
-              <div class="rellax tech13" data-rellax-percentage="0.9" data-rellax-speed="1.5" data-rellax-zindex="9" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
-                <img src="./images/drupal.svg" class="entity-img" />
-                <p>Drupal</p>
-              </div>
-              <div class="rellax tech14" data-rellax-percentage="1.0" data-rellax-speed="1" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="bottom-center">
-                <img src="./images/postman.svg" class="entity-img" />
-                <p>Postman</p>
-              </div>
-            </div>
-          </div>
-
-      </section>
-    </div>
-  
-    <div class= "projects">
-      <section>
-        
-          <div id="Projects"><h3>Projects</h3></div>
-
-          <!-- <div class="grid">
-            <article>
-              <div class="imgBx">
-              <img src="./images/github.jpg" class="cardImg" alt="Sample photo">
-              </div>
-              <div class="detail">
-                <h4>Card 1</h4>
-                <p>Read More &xrarr;</p>
-              </div>
-            </article>
-            <article>
-              <div class="imgBx">
-              <img src="./images/github.jpg" class="cardImg" alt="Sample photo">
-              </div>
-              <div class="detail">
-                <h4>Card 2</h4>
-                <p>Read More &xrarr;</p>
-              </div>
-            </article>
-            <article>
-              <div class="imgBx">
-              <img src="./images/github.jpg" class="cardImg" alt="Sample photo">
-              </div>
-              <div class="detail">
-                <h4>The Curious Chap</h4>
-                <p>Visit Blog &xrarr;</p>
-              </div>
-            </article>
-          </div> -->
-
-          <section class="cards-wrapper">
-            <div class="card-grid-space">
-              <div class="num">01</div>
-              <div class="card-container">
-                <a class="card" href="#" target="_blank" rel="noopener noreferrer" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
-                  <div>
-                    <h1>Portfolio</h1>
-                    <!-- <p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p> -->
-                    <!-- <div class="date">6 Oct 2017</div> -->
-                    <p>Click to View &xrarr;</p>
-                    <div class="tags">
-                      <div class="tag tag1">HTML</div>
-                      <div class="tag tag2">SASS</div>
-                      <div class="tag tag3">JS</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="card-grid-space">
-              <div class="num">02</div>
-              <div class="card-container">
-                <a class="card" href="https://github.com/Webslingr/clashroyal"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/clash.jpg')">
-                  <div>
-                    <h1>Clash Royal</h1>
-                    <p>Click to View &xrarr;</p>
-                    <div class="tags">
-                      <div class="tag tag1">HTML</div>
-                      <div class="tag tag2">CSS</div>
-                      <div class="tag tag3">JS</div>
-                      <div class="tag tag4">PHP</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="card-grid-space">
-              <div class="num">03</div>
-              <div class="card-container">
-                <a class="card" href="https://github.com/Webslingr/The-Wave"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/wave.png')">
-                  <div>
-                    <h1>The Wave</h1>
-                    <p>Click to View &xrarr;</p>
-                    <div class="tags">
-                      <div class="tag tag9">WordPress</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="card-grid-space">
-              <div class="num">04</div>
-              <div class="card-container">
-                <a class="card" href="https://github.com/Webslingr/Music-FullStack-App"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/music.jpg')">
-                  <div>
-                    <h1>Music FullStack App</h1>
-                    <p>Click to View &xrarr;</p>
-                    <div class="tags">
-                      <div class="tag tag5">React</div>
-                      <div class="tag tag6">Bootstrap</div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="card-grid-space">
-              <div class="num">05</div>
-              <div class="card-container">
-                <a class="card" href="https://github.com/Webslingr/Simple-Electron-App"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/electron.png')">
-                  <div>
-                    <h1>Basic Electron App</h1>
-                    <!-- <p>Learn how to use links and images along with file paths…</p> -->
-                    <!-- <div class="date">14 Oct 2017</div> -->
-                    <div class="tags">
-                      <div class="tag tag7">Electron</div>
-                      <p>Click to View &xrarr;</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="card-grid-space">
-              <div class="num">06</div>
-              <div class="card-container">
-                <a class="card" href="https://github.com/Webslingr/Tic-Tac-Toe-Game"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/tictactoe.png')">
-                  <div>
-                    <h1>Tic Tac Toe Game</h1>
-                    <!-- <p>Learn how to use links and images along with file paths…</p> -->
-                    <!-- <div class="date">14 Oct 2017</div> -->
-                    <div class="tags">
-                      <div class="tag tag3">JavaScript</div>
-                      <p>Click to View &xrarr;</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="card-grid-space">
-              <div class="num">07</div>
-              <div class="card-container">
-                <a class="card" href="https://github.com/Webslingr/Real-Time-Flight-App"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/flight.png')">
-                  <div>
-                    <h1>Real Time Flight App</h1>
-                    <div class="tags">
-                      <div class="tag tag3">JavaScript</div>
-                      <p>Click to View &xrarr;</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="card-grid-space">
-              <div class="num">08</div>
-              <div class="card-container">
-                <a class="card" href="https://github.com/Webslingr/User-And-Theme-Management-App"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/laravel.jpg')">
-                  <div>
-                    <h1>User And Theme Management App</h1>
-                    <div class="tags">
-                      <div class="tag tag8">Laravel</div>
-                      <p>Click to View &xrarr;</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
-          </section>
-        
-        <a href="#"><p class="project-link">View all projects &xrarr;</p></a>
-
-      </section>
-    </div>  
-
-      <footer>
-        <div class="footer-bottom">
-          <div class="left-col">
-            <!-- <img src="#" alt="Jevin Sunnyassy" class="logo2"> -->
-            <div class="social-media">
-              <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-dribbble"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a> -->
-              <a href="https://www.figma.com/file/UjvWJUFzpdamlujuOLjT5K/Food-ordering?node-id=0%3A1&t=EiEy2wWv0bi1lPni-1" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i></a>
-              <a href="https://github.com/Webslingr" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/jevin-sunnyassy/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div class="rights-text">
-              <p>&copy; 2023 Jevin Sunnyassy</p>
-              <p> Made with <span style="color:red;">&#10084;&#65039;</span> in Mauritius </p>
-            </div>
-          </div> 
-          
-          <div class="right-col">
-            <h6>Contact me</h6>
-            <div class="border"></div>
-            <br>
-            <a href="contact.html"><button id="contact">Contact Me</button></a>
-            <p>Email: <h7>jevinsunnyassy@gmail.com</h7></p>
-          </div>
+        <div class="name" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="300">
+          <p>Hello there! &#x1F44B;</p>
+          <p>My Name is Jevin Sunnyassy.</p>
+          <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="100">But you can call me Jason.</p>
         </div>
-      </footer>
+
+      </div>
+
+      <!-- TECHNOLOGIES SECTION -->
+
+      <div class="technologies">
+        <!-- <section> -->
+
+          <div id="Techs"><h3>Technologies Learned</h3> </div>
+          
+          <!-- <div class="grid-container">
+            <div class="grid-item1"><span id="pills">HTML5</span></div>
+            <div class="grid-item2"><span id="pills">CSS3</span></div>
+            <div class="grid-item3"><span id="pills">SCSS</span></div>
+            <div class="grid-item4"><span id="pills">Wordpress</span></div>
+            <div class="grid-item5"><span id="pills">Git</span></div>
+            <div class="grid-item6"><span id="pills">PHP</span></div>
+          </div>  -->
+          <!-- <div class="parallax__group hero-container">
+            <div class="parallax__layer sky">HTML5</div>
+            <div class="parallax__layer bushes">CSS3</div>
+            <div class="parallax__layer water">SCSS</div>
+            <div class="parallax__layer people1">Wordpress</div>
+            <div class="parallax__layer people2">Git</div>
+            <div class="parallax__layer people3">PHP</div>
+
+            </div> -->
+
+            <div class="frontend">
+              <div>
+                <p data-aos="fade-right" data-aos-duration="500">Frontend</p>
+              </div>
+              
+              <div class="grid-container">
+                <div class="rellax tech1" data-rellax-percentage="0.8" data-rellax-speed="1" data-rellax-zindex="5" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-center">
+                  <img src="./images/bootstrap.svg" class="entity-img" />
+                  <p>Bootstrap</p>
+                </div>
+                <div class="rellax tech2" data-rellax-percentage="0.9" data-rellax-speed="1.5" data-rellax-zindex="9" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
+                  <img src="./images/html5.svg" class="entity-img" />
+                  <p>HTML5</p>
+                </div>
+                <div class="rellax tech3" data-rellax-percentage="1.0" data-rellax-speed="1" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="bottom-center">
+                  <img src="./images/css3.svg" class="entity-img" />
+                  <p>CSS3</p>
+                </div>
+                <div class="rellax tech4" data-rellax-percentage="0.7" data-rellax-speed="1.2" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
+                  <img src="./images/javascript.svg" class="entity-img" />
+                  <p>JavaScript</p>
+                </div>
+                <div class="rellax tech5" data-rellax-percentage="0.5" data-rellax-speed="1" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
+                  <img src="./images/react.svg" class="entity-img" />
+                  <p>React JS</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="backend">
+              <div>
+                <p data-aos="fade-right" data-aos-duration="500">backend</p>
+              </div>
+
+              <div class="grid-container2">
+                <div class="rellax tech6" data-rellax-percentage="0.5" data-rellax-speed="1" data-rellax-zindex="5" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-center">
+                  <img src="./images/mysql.svg" class="entity-img" />
+                  <p>MySQL</p>
+                </div>
+                <div class="rellax tech7" data-rellax-percentage="0.8" data-rellax-speed="1.5" data-rellax-zindex="9" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
+                  <img src="./images/node.svg" class="entity-img" />
+                  <p>NodeJS</p>
+                </div>
+                <div class="rellax tech8" data-rellax-percentage="1.0" data-rellax-speed="1" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="bottom-center">
+                  <img src="./images/nginx.svg" class="entity-img" />
+                  <p>NGINX</p>
+                </div>
+                <div class="rellax tech9" data-rellax-percentage="0.4" data-rellax-speed="1.2" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
+                  <img src="./images/apache.svg" class="entity-img" />
+                  <p>Apache</p>
+                </div>
+                <div class="rellax tech10" data-rellax-percentage="0.3" data-rellax-speed="1" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
+                  <img src="./images/php.svg" class="entity-img" />
+                  <p>PHP</p>
+                </div>
+                <div class="rellax tech11" data-rellax-percentage="0.5" data-rellax-speed="1.4" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
+                  <img src="./images/dotnet.svg" class="entity-img" />
+                  <p>.NET Core</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="other">
+              <div>
+                <p data-aos="fade-right" data-aos-duration="1000">Other Tools</p>
+              </div>
+              
+              <div class="grid-container3">
+                <div class="rellax tech12" data-rellax-percentage="0.8" data-rellax-speed="1" data-rellax-zindex="5" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-center">
+                  <img src="./images/wordpress.svg" class="entity-img" />
+                  <p>WordPress</p>
+                </div>
+                <div class="rellax tech13" data-rellax-percentage="0.9" data-rellax-speed="1.5" data-rellax-zindex="9" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="top-center">
+                  <img src="./images/drupal.svg" class="entity-img" />
+                  <p>Drupal</p>
+                </div>
+                <div class="rellax tech14" data-rellax-percentage="1.0" data-rellax-speed="1" data-rellax-zindex="3" data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="bottom-center">
+                  <img src="./images/postman.svg" class="entity-img" />
+                  <p>Postman</p>
+                </div>
+              </div>
+            </div>
+
+        <!-- </section> -->
+      </div>
+    
+      <div class= "projects">
+        <!-- <section> -->
+          
+            <div id="Projects"><h3>Projects</h3></div>
+
+            <!-- <div class="grid">
+              <article>
+                <div class="imgBx">
+                <img src="./images/github.jpg" class="cardImg" alt="Sample photo">
+                </div>
+                <div class="detail">
+                  <h4>Card 1</h4>
+                  <p>Read More &xrarr;</p>
+                </div>
+              </article>
+              <article>
+                <div class="imgBx">
+                <img src="./images/github.jpg" class="cardImg" alt="Sample photo">
+                </div>
+                <div class="detail">
+                  <h4>Card 2</h4>
+                  <p>Read More &xrarr;</p>
+                </div>
+              </article>
+              <article>
+                <div class="imgBx">
+                <img src="./images/github.jpg" class="cardImg" alt="Sample photo">
+                </div>
+                <div class="detail">
+                  <h4>The Curious Chap</h4>
+                  <p>Visit Blog &xrarr;</p>
+                </div>
+              </article>
+            </div> -->
+
+            <div class="cards-wrapper">
+              <div class="card-grid-space">
+                <div class="num">01</div>
+                <div class="card-container">
+                  <a class="card" href="#" target="_blank" rel="noopener noreferrer" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+                    <div>
+                      <h1>Portfolio</h1>
+                      <!-- <p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p> -->
+                      <!-- <div class="date">6 Oct 2017</div> -->
+                      <p>Click to View &xrarr;</p>
+                      <div class="tags">
+                        <div class="tag tag1">HTML</div>
+                        <div class="tag tag2">SASS</div>
+                        <div class="tag tag3">JS</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">02</div>
+                <div class="card-container">
+                  <a class="card" href="https://github.com/Webslingr/clashroyal"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/clash.jpg')">
+                    <div>
+                      <h1>Clash Royal</h1>
+                      <p>Click to View &xrarr;</p>
+                      <div class="tags">
+                        <div class="tag tag1">HTML</div>
+                        <div class="tag tag2">CSS</div>
+                        <div class="tag tag3">JS</div>
+                        <div class="tag tag4">PHP</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">03</div>
+                <div class="card-container">
+                  <a class="card" href="https://github.com/Webslingr/The-Wave"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/wave.png')">
+                    <div>
+                      <h1>The Wave</h1>
+                      <p>Click to View &xrarr;</p>
+                      <div class="tags">
+                        <div class="tag tag9">WordPress</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">04</div>
+                <div class="card-container">
+                  <a class="card" href="https://github.com/Webslingr/Music-FullStack-App"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/music.jpg')">
+                    <div>
+                      <h1>Music FullStack App</h1>
+                      <p>Click to View &xrarr;</p>
+                      <div class="tags">
+                        <div class="tag tag5">React</div>
+                        <div class="tag tag6">Bootstrap</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">05</div>
+                <div class="card-container">
+                  <a class="card" href="https://github.com/Webslingr/Simple-Electron-App"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/electron.png')">
+                    <div>
+                      <h1>Basic Electron App</h1>
+                      <!-- <p>Learn how to use links and images along with file paths…</p> -->
+                      <!-- <div class="date">14 Oct 2017</div> -->
+                      <div class="tags">
+                        <div class="tag tag7">Electron</div>
+                        <p>Click to View &xrarr;</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">06</div>
+                <div class="card-container">
+                  <a class="card" href="https://github.com/Webslingr/Tic-Tac-Toe-Game"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/tictactoe.png')">
+                    <div>
+                      <h1>Tic Tac Toe Game</h1>
+                      <!-- <p>Learn how to use links and images along with file paths…</p> -->
+                      <!-- <div class="date">14 Oct 2017</div> -->
+                      <div class="tags">
+                        <div class="tag tag3">JavaScript</div>
+                        <p>Click to View &xrarr;</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">07</div>
+                <div class="card-container">
+                  <a class="card" href="https://github.com/Webslingr/Real-Time-Flight-App"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/flight.png')">
+                    <div>
+                      <h1>Real Time Flight App</h1>
+                      <div class="tags">
+                        <div class="tag tag3">JavaScript</div>
+                        <p>Click to View &xrarr;</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card-grid-space">
+                <div class="num">08</div>
+                <div class="card-container">
+                  <a class="card" href="https://github.com/Webslingr/User-And-Theme-Management-App"  target="_blank" rel="noopener noreferrer" style="--bg-img: url('../images/laravel.jpg')">
+                    <div>
+                      <h1>User And Theme Management App</h1>
+                      <div class="tags">
+                        <div class="tag tag8">Laravel</div>
+                        <p>Click to View &xrarr;</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+            </div>
+          
+          <a href="#"><p class="project-link">View all projects &xrarr;</p></a>
+
+        <!-- </section> -->
+      </div>  
+
+        <footer>
+          <div class="footer-bottom">
+            <div class="left-col">
+              <!-- <img src="#" alt="Jevin Sunnyassy" class="logo2"> -->
+              <div class="social-media">
+                <!-- <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a> -->
+                <a href="https://www.figma.com/file/UjvWJUFzpdamlujuOLjT5K/Food-ordering?node-id=0%3A1&t=EiEy2wWv0bi1lPni-1" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i></a>
+                <a href="https://github.com/Webslingr" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jevin-sunnyassy/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div class="rights-text">
+                <p>&copy; 2023 Jevin Sunnyassy</p>
+                <p> Made with <span style="color:red;">&#10084;&#65039;</span> in Mauritius </p>
+              </div>
+            </div> 
+            
+            <div class="right-col">
+              <h6>Contact me</h6>
+              <div class="border"></div>
+              <br>
+              <a href="contact.html"><button id="contact">Contact Me</button></a>
+              <p>Email: <h7>jevinsunnyassy@gmail.com</h7></p>
+            </div>
+          </div>
+        </footer>
+      </div>
 
     <!-- Rellax.js parallax animation library -->
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
