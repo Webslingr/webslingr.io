@@ -94,16 +94,24 @@ canvas {
   text-align: center;
 }
 
-.frontend, .other {
+.frontend {
   display: flex;
   margin-top: 30vw;
   justify-content: space-evenly;
 }
-.frontend p, .other p {
+
+.frontend-text {
+  height: 90vh;
+}
+
+.frontend-text p {
   align-items: center;
   font-size: 30px;
   font-weight: 500;
   color: var(--color-text);
+  position: sticky;
+  top: 50vh;
+  text-align: center;
 }
 
 .grid-container {
@@ -113,12 +121,12 @@ canvas {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 40px;
   transform-style: preserve-3d;
+  margin-top: 40vw;
   margin-bottom: 40px;
 }
 
 .grid-container p {
   color: var(--color-text);
-  margin-top: 5%;
   font-weight: bold;
   font-size: large;
 }
@@ -146,6 +154,7 @@ canvas {
 
 .tech3 {
   position: relative;
+  top: 9vw;
   left: 35%;
   width: 105px;
 }
@@ -166,6 +175,7 @@ canvas {
 
 .tech5 {
   position: relative;
+  top: 8vw;
   left: 45%;
   width: 105px;
 }
@@ -176,15 +186,23 @@ canvas {
 
 .backend {
   display: flex;
-  margin-top: 30vw;
-  margin-bottom: 150px;
+  margin-top: 60vw;
   justify-content: space-evenly;
+  position: sticky;
 }
-.backend p {
+
+.backend-text {
+  height: 50vh;
+}
+
+.backend-text p {
   align-items: center;
   font-size: 30px;
   font-weight: 500;
   color: var(--color-text);
+  position: sticky;
+  top: 50vh;
+  text-align: center;
 }
 
 .grid-container2 {
@@ -194,6 +212,7 @@ canvas {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 40px;
   transform-style: preserve-3d;
+  margin-top: 20vw;
   margin-bottom: 340px;
 }
 
@@ -265,10 +284,32 @@ canvas {
   border-radius: 20px;
 }
 
+.other {
+  display: flex;
+  margin-top: 30vw;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.other-text {
+  height: 70vh;
+}
+
+.other-text p {
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--color-text);
+  position: sticky;
+  top: 50vh;
+  text-align: center;
+}
+
 .grid-container3 {
   display: grid;
   width: 40%;
   justify-content: end;
+  margin-top: 30vw;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 40px;
   transform-style: preserve-3d;
@@ -284,8 +325,9 @@ canvas {
 
 .tech12 {
   position: relative;
-  left: 45%;
-  width: 105px;
+  margin-top: 4vw;
+  left: 4vw;
+  width: 7.5vw;
 }
 .tech12 img {
   box-shadow: 0 0 0.9em 0.1em var(--wordpress);
@@ -294,8 +336,8 @@ canvas {
 
 .tech13 {
   position: relative;
-  left: 45%;
-  width: 105px;
+  left: 5vw;
+  width: 7.5vw;
 }
 .tech13 img {
   box-shadow: 0 0 0.9em 0.1em var(--drupal);
@@ -304,8 +346,8 @@ canvas {
 
 .tech14 {
   position: relative;
-  left: 45%;
-  width: 105px;
+  left: 5vw;
+  width: 7.5vw;
 }
 .tech14 img {
   box-shadow: 0 0 0.9em 0.1em var(--postman);

@@ -210,20 +210,39 @@ canvas {
     text-align: center;
 }
 
+// FRONTEND SECTION
 
-.frontend, .other {
+.frontend {
     display: flex;
     // margin-top: 340px;
     margin-top: 30vw;
     // margin-bottom: 150px;
     justify-content: space-evenly;
 
-    p {
-        align-items: center;
-        font-size: 30px;
-        font-weight: 500;
-        color: var(--color-text);
-    }
+    // p {
+    //     align-items: center;
+    //     font-size: 30px;
+    //     font-weight: 500;
+    //     color: var(--color-text);
+    //     position: sticky;
+    // height: 150vh;
+    // text-align: center;
+    // }
+}
+
+.frontend-text{
+    height: 90vh;
+}
+
+
+.frontend-text p {
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color-text);
+    position: sticky;
+    top: 50vh; //Important
+    text-align: center;
 }
 
 
@@ -242,13 +261,14 @@ canvas {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 40px;
     transform-style: preserve-3d;
+    margin-top: 40vw;
     // margin-top: 340px;
     margin-bottom: 40px;
 }
 
 .grid-container p {
     color: var(--color-text);
-    margin-top: 5%;
+    // margin-top: 3vw;
     font-weight: bold;
     font-size: large;
 }
@@ -285,6 +305,7 @@ canvas {
     // position: absolute;
     position: relative;
     // margin-top: 40vh;
+    top: 9vw;
     left: 35%;
     width: 105px;
 
@@ -312,6 +333,7 @@ canvas {
     // position: absolute;
     position: relative;
     // margin-top: 40vh;
+    top: 8vw;
     left: 45%;
     width: 105px;
 
@@ -323,19 +345,38 @@ canvas {
 
 
 
+// BACKEND SECTION
+
 .backend {
     display: flex;
     // margin-top: 340px;
-    margin-top: 30vw;
-    margin-bottom: 150px;
+    margin-top: 60vw;
+    // margin-bottom: 150px;
     justify-content: space-evenly;
+    position: sticky;
 
-    p {
-        align-items: center;
-        font-size: 30px;
-        font-weight: 500;
-        color: var(--color-text);
-    }
+    // p {
+    //     align-items: center;
+    //     font-size: 30px;
+    //     font-weight: 500;
+    //     color: var(--color-text);
+    // }
+}
+
+
+.backend-text{
+    height: 50vh;
+}
+
+
+.backend-text p {
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color-text);
+    position: sticky;
+    top: 50vh; //Important
+    text-align: center;
 }
 
 .grid-container2 {  
@@ -345,6 +386,7 @@ canvas {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 40px;
     transform-style: preserve-3d;
+    margin-top: 20vw;
     // margin-top: 340px;
     margin-bottom: 340px;
 }
@@ -359,7 +401,7 @@ canvas {
 .tech6 {
     // position: absolute;
     position: relative;
-    // margin-top: 20vh;
+    // margin-top: 10vw;
     left: 30%;
     width: 105px;
 
@@ -438,11 +480,39 @@ canvas {
 }
 
 
+.other{
+    display: flex;
+    // margin-top: 340px;
+    margin-top: 30vw;
+    // margin-bottom: 150px;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+
+// OTHER SECTION
+
+.other-text{
+    height: 70vh;
+}
+
+
+.other-text p {
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color-text);
+    position: sticky;
+    top: 50vh; //Important
+    text-align: center;
+}
+
 
 .grid-container3 {  
     display: grid;
     width: 40%;
     justify-content: end;
+    margin-top: 30vw;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 40px;
     transform-style: preserve-3d;
@@ -541,9 +611,9 @@ canvas {
 .tech12 {
     // position: absolute;
     position: relative;
-    // margin-top: 40vh;
-    left: 45%;
-    width: 105px;
+    margin-top: 4vw;
+    left: 4vw;
+    width:7.5vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--wordpress);
@@ -555,8 +625,8 @@ canvas {
     // position: absolute;
     position: relative;
     // margin-top: 40vh;
-    left: 45%;
-    width: 105px;
+    left: 5vw;
+    width:7.5vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--drupal);
@@ -568,8 +638,8 @@ canvas {
     // position: absolute;
     position: relative;
     // margin-top: 40vh;
-    left: 45%;
-    width: 105px;
+    left: 5vw;
+    width:7.5vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--postman);
