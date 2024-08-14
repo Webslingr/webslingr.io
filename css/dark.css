@@ -4,9 +4,14 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
   font-family: "Montserrat", sans-serif;
   background: var(--bg);
 }
@@ -46,6 +51,18 @@ h3 {
 .website {
   position: relative;
   z-index: 3;
+  background-color: var(--bg);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transition: 4s;
+}
+
+.color-background {
+  background-color: var(--bg-section);
 }
 
 .webslingr {
@@ -68,6 +85,10 @@ h3 {
   left: 0;
 }
 
+canvas {
+  display: block;
+}
+
 .technologies {
   background: var(--bg-section);
   text-align: center;
@@ -75,7 +96,7 @@ h3 {
 
 .frontend, .other {
   display: flex;
-  margin-top: 340px;
+  margin-top: 30vw;
   justify-content: space-evenly;
 }
 .frontend p, .other p {
@@ -155,6 +176,7 @@ h3 {
 
 .backend {
   display: flex;
+  margin-top: 30vw;
   margin-bottom: 150px;
   justify-content: space-evenly;
 }
@@ -519,9 +541,15 @@ html, body, section {
 
 .namer {
   background: var(--bg-section);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
 
 .name {
+  margin-top: 5vh;
   font-size: xx-large;
   font-weight: bold;
   color: var(--color-text);
@@ -529,7 +557,7 @@ html, body, section {
   margin: auto;
   bottom: 0;
   z-index: 2;
-  line-height: 4px;
+  line-height: 7vh;
   align-self: center;
 }
 
@@ -717,11 +745,6 @@ h2 {
 :root {
   --color: #3c3163;
   --transition-time: 0.5s;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 .title {

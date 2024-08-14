@@ -85,12 +85,25 @@ html, body, section {
 
 .namer {
   background: var(--bg-section);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  // margin-top: 5vh;
+
+  // padding-bottom: 105vh;
+  // scroll-snap-align: start;
+  // scroll-snap-stop: always;
+
+  // width: 100%;
 }
 
 .name {
   // display: grid;
   // grid-template-columns: repeat(2, 1fr)
   // grid-column: 1 / 2;
+  margin-top: 5vh;
   font-size: xx-large;
   font-weight: bold;
   color: var(--color-text); 
@@ -103,7 +116,7 @@ html, body, section {
   bottom: 0; 
   // right: 0; 
   z-index: 2; 
-  line-height: 4px;
+  line-height: 7vh;
   align-self: center;
 }
 

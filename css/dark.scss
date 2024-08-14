@@ -5,11 +5,19 @@ $path-length: 157px; // Retrieved using SVG's getTotalLength()
 
 html{
     scroll-behavior: smooth;
+    // scroll-snap-type: y mandatory;
 }  
 
-body{
+//Resets css style which helped avoid unknown padding between divs
+* {
     margin: 0;
     padding: 0;
+  }
+  
+
+body{
+    width: 100%;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background: var(--bg);
 }
@@ -60,6 +68,37 @@ img{
 .website {
     position: relative;
     z-index: 3;
+    background-color: var(--bg);
+    // animation: fadeanimation 4s ease-in forwards;
+    // overflow: scroll;
+    // scroll-snap-points-y: repeat()100vh;
+    // scroll-snap-type: y mandatory;
+    opacity: 0;
+    transition: all 1s; 
+}
+
+.show {
+    opacity: 1;
+    transition: 4s;
+}
+
+// .hidden {
+//     opacity: 0;
+//     transition: all 1s; 
+// }
+
+// @keyframes fadeanimation {
+//     from {
+//         opacity: 0%;
+//     }    
+//     to {
+//         opacity: 100%;
+//     }
+// }
+
+// Website colour
+.color-background {
+    background-color: var(--bg-section);
 }
 
 .webslingr{
@@ -87,6 +126,11 @@ img{
     position: absolute;
     top: 0;
     left: 0;
+}
+
+// Removes white space at bottom of canvas
+canvas {
+    display: block;
 }
 
 //TECHNOLOGY
@@ -169,7 +213,8 @@ img{
 
 .frontend, .other {
     display: flex;
-    margin-top: 340px;
+    // margin-top: 340px;
+    margin-top: 30vw;
     // margin-bottom: 150px;
     justify-content: space-evenly;
 
@@ -281,6 +326,7 @@ img{
 .backend {
     display: flex;
     // margin-top: 340px;
+    margin-top: 30vw;
     margin-bottom: 150px;
     justify-content: space-evenly;
 
