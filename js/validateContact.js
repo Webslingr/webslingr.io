@@ -83,6 +83,6 @@ function validateForm(){
         //replace
         alert("Message sent");
     } else {
-        alert("Message not sent");
+        // alert("Message not sent");
     }
 }
