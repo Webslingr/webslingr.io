@@ -37,7 +37,7 @@
         
         <div class="form-control">
           <p>Name</p>
-          <input type="text" class="name" id="txtName" onblur="validateName()" placeholder="">
+          <input type="text" class="name" id="txtName" onblur="validateName()" placeholder="Murugan Krishnan" required />
           <br>
           <div id="txtNameError"></div>
           <!-- <div class="nameField">
@@ -47,7 +47,7 @@
           </div> -->
           
           <p>Email</p>
-          <input type="mail" class="email" id="txtEmail" onblur="validateEmail()" placeholder="">
+          <input type="mail" class="email" id="txtEmail" onblur="validateEmail()" placeholder="name@address.com" required />
           <br>
           <div id="txtEmailError"></div>
           <!-- <div class="emailField">
@@ -57,7 +57,7 @@
           </div> -->
 
           <p>Message</p>
-          <textarea rows="8" placeholder="" id="txtMessage" onblur="validateMessage()" class="message"></textarea>
+          <textarea rows="8" placeholder="" id="txtMessage" onblur="validateMessage()" class="message" required></textarea>
           <br>
           <div id="txtMessageError"></div>
           <!-- <div class="messageField">
