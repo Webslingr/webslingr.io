@@ -15,29 +15,40 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
 
-    .hero img {
-        width: 90%;
-        margin-top: 20%;
+    body {
+        border: 0 !important;
     }
 
-    section {
-        width: 100%;
+    #container3D {
+        // top: 0%;
+        // left: 8%;
+        width: 102vw;
+        height: 150vw;
     }
 
-    .mouse{
-        width: 52px;
-        height: 73px;
-    }
+    // .hero img {
+    //     width: 90%;
+    //     margin-top: 20%;
+    // }
 
-    .mouse:before{
-        width: 40px;
-        height: 63px;
-    }
+    // section {
+    //     width: 100%;
+    // }
 
-    .mouse:after{
-        width: 10px;
-        height: 10px;
-    }
+    // .mouse{
+    //     width: 52px;
+    //     height: 73px;
+    // }
+
+    // .mouse:before{
+    //     width: 40px;
+    //     height: 63px;
+    // }
+
+    // .mouse:after{
+    //     width: 10px;
+    //     height: 10px;
+    // }
 
 }
 

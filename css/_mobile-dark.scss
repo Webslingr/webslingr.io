@@ -73,16 +73,21 @@
      flex-direction: column;
     }
 
-    .grid-container {
+    .grid-container, .grid-container2, .grid-container3 {
       display: grid;
-      margin-top: 75%;
-      margin-left: 55%;
+      margin: auto;
+    //   margin-top: 75%;
+    //   margin-left: 55%;
       /* width: 40%; */
       /* justify-content: end; */
       /* grid-template-columns: repeat(4, 1fr); */
       row-gap: 30px;
       transform-style: preserve-3d;
       margin-bottom: 340px;
+    }
+
+    .grid-container p {
+        font-size: 3vw;
     }
 
     .tech1, .tech2, .tech3, .tech4, .tech5, .tech6, .tech7, .tech8, .tech9, .tech10
@@ -99,6 +104,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--bootstrap);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   
   }
@@ -110,6 +117,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--html5);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -120,25 +129,31 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--css3);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
   
   .tech4 {
-      left: 25%;
+      left: 2vw;
   
       img {
           box-shadow: 0 0 0.9em 0.1em var(--javascript);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
   .tech5 {
-      left: 45%;
+      left: 19vw;
   
       img {
           box-shadow: 0 0 0.9em 0.1em var(--react);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -189,6 +204,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--mysql);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   
   }
@@ -200,6 +217,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--node);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -211,6 +230,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--nginx);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -221,6 +242,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--apache);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -230,6 +253,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--php);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -241,6 +266,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--dotnet);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -285,6 +312,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--mysql);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   
   }
@@ -296,6 +325,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--node);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -305,6 +336,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--nginx);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -315,6 +348,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--apache);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -324,6 +359,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--php);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -333,6 +370,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--dotnet);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -343,6 +382,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--wordpress);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -353,6 +394,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--drupal);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
   
@@ -363,6 +406,8 @@
       img {
           box-shadow: 0 0 0.9em 0.1em var(--postman);
           border-radius: 20px;
+          height: 15vw;
+          width: 22vw;
       }
   }
     
