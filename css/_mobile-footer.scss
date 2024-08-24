@@ -5,8 +5,16 @@
     //     margin-top: 130vh;
     // }
 
-    footer-bottom {
+    .footer-bottom {
         justify-content: center;
+        align-items: center;
+        padding: 0;
+        flex-direction: column-reverse;
+        gap: 30vw;
+    }
+
+    .social-media {
+        margin-left: 3.5vw;
     }
 
     .right-col h6 {
@@ -14,7 +22,8 @@
     }
 
     .rights-text {
-        width: 60vw;
+        font-size: 3vw;
+        text-align: center;
     }
 
 }
