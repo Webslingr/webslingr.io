@@ -89,7 +89,7 @@ html, body, section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 200vw;
   // margin-top: 5vh;
 
   // padding-bottom: 105vh;
@@ -103,34 +103,51 @@ html, body, section {
   // display: grid;
   // grid-template-columns: repeat(2, 1fr)
   // grid-column: 1 / 2;
-  margin-top: 5vh;
+  // margin-top: 5vh;
   font-size: xx-large;
   font-weight: bold;
   color: var(--color-text); 
   text-align: left;
   // margin-left: 1.3em;
-  margin: auto;
+  // margin: auto;
   // position: absolute;
-  // top: 0; 
+  position: relative;
+  top: 20vw;
+  // top: 1vw; 
   // left: -0.43em; 
-  bottom: 0; 
+  // bottom: 50vw; 
   // right: 0; 
   z-index: 2; 
+  position: sticky;
   line-height: 7vh;
   align-self: center;
+  height: 50vw;
 }
 
 .name {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
   // height: 100vh;
 }
 
-.name p {
-  position: sticky;
-}
+// .name .p1 {
+//   // position: sticky;
+//   margin-bottom: 10vw;
+//   top: 50vw;
+// }
+
+// .name .p2 {
+//   // position: sticky;
+//   margin-bottom: 5vw;
+//   top: 55vw;
+// }
+
+// .name .p3 {
+//   // position: sticky;
+//   top: 60vw;
+// }
 
 .webslingr{
   // grid-row: auto;

@@ -62,8 +62,22 @@ img{
 }
 
 .scroll-area {
-    height: 500vh;
+    height: 250vw;
+    animation: animate 5s ease infinite;
 }
+
+
+// @keyframes animate {
+    
+//     50%{
+//         background-color: red;
+//     }
+
+//     100%{
+//         background-color: red;
+//     }
+// }
+
 
 .website {
     position: relative;
@@ -480,17 +494,20 @@ canvas {
 }
 
 
+
+
+// OTHER SECTION
+
 .other{
     display: flex;
     // margin-top: 340px;
     margin-top: 30vw;
+    margin-bottom: 90vw;
     // margin-bottom: 150px;
     justify-content: space-evenly;
-    height: 100vh;
+    position: sticky;
+    // height: 100vh;
 }
-
-
-// OTHER SECTION
 
 .other-text{
     height: 70vh;
@@ -517,7 +534,7 @@ canvas {
     row-gap: 40px;
     transform-style: preserve-3d;
     // margin-top: 340px;
-    margin-bottom: 340px;
+    // margin-bottom: 100vw;
 }
 
 .grid-container3 p {

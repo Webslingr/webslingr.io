@@ -55,7 +55,7 @@
 
 //SMALL SCREEN
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 767px) {
 
     .hero img {
         width: 105vw;
@@ -70,4 +70,8 @@
         font-size: large;
     }
 
+    .scroll-area {
+        height: 400vh;
+    }
+    
 }

@@ -32,8 +32,19 @@
 
     nav {
         // width: 60%;
-        margin-left: 20vw;
-        margin-top: 2.5vw;
+        // margin-left: 20vw;
+        // margin-top: 2vw;
+        flex-direction: row-reverse;
+        width: 30vw;
+    }
+
+    .dark-mode-toggle {
+        top: 7.5vw;
+        gap: 10vw;
+    }
+
+    #logo {
+        margin-left: 22vw;
     }
 
     .menu { 
@@ -55,15 +66,17 @@
     }
 
     .menu.active {
-        right: 0;
-        width: 101vw;
-        height: 105vh;
+        top: 0;
+        left: 0;
+        // right: 4vw;
+        width: 100vw;
+        height: 100vh;
         touch-action: none; // Prevents scrolling on active menu
     }
 
 
     .menu li {
-        font-size: 10vw;
+        font-size: 7vw;
     }
 
     // nav {
@@ -98,15 +111,23 @@
     }
     
     .hamburger.active .bar:nth-child(1) {
+        width: 10vw;
+        height: 1.5vw;
+        margin-top: 2vw;
         transform: translateY(8px) rotate(45deg);
     }
     
     .hamburger.active .bar:nth-child(3) {
+        width: 10vw;
+        height: 1.5vw;
         transform: translateY(-8px) rotate(-45deg);
     }
     
     .hamburger.active {
-        margin-left: 170px;
+        // margin-left: 170px;
+        position: fixed;
+        // right: 10vw;
+        left: 9.5vw;
     }
 
     // #dark-mode-toggle {

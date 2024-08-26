@@ -260,13 +260,18 @@ img{
     // margin-bottom: 13vh;
 }
 
-input:invalid {
-    border: 2px dashed red;
-}
+// REMOVES PLACEHOLDER ON FOCUS
+input:focus::placeholder {
+    color: transparent;
+  }
+
+// input:invalid {
+//     border: 2px dashed red;
+// }
   
-input:invalid:required {
-    background-image: linear-gradient(to right, pink, lightgreen);
-}
+// input:invalid:required {
+//     background-image: linear-gradient(to right, pink, lightgreen);
+// }
   
 input:valid {
     border: 2px solid var(--color-text);

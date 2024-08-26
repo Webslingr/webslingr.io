@@ -45,7 +45,8 @@ h3 {
 }
 
 .scroll-area {
-  height: 500vh;
+  height: 250vw;
+  animation: animate 5s ease infinite;
 }
 
 .website {
@@ -287,8 +288,9 @@ canvas {
 .other {
   display: flex;
   margin-top: 30vw;
+  margin-bottom: 90vw;
   justify-content: space-evenly;
-  height: 100vh;
+  position: sticky;
 }
 
 .other-text {
@@ -313,7 +315,6 @@ canvas {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 40px;
   transform-style: preserve-3d;
-  margin-bottom: 340px;
 }
 
 .grid-container3 p {
@@ -372,7 +373,7 @@ html.transition *:after {
   z-index: 999999;
   background: var(--bg);
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .loader,
@@ -473,7 +474,7 @@ html.transition *:after {
 #back-to-top-btn {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 99;
   margin-top: 80vh;
   right: 20px;
   font-size: 26px;
@@ -587,31 +588,21 @@ html, body, section {
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 200vw;
 }
 
 .name {
-  margin-top: 5vh;
   font-size: xx-large;
   font-weight: bold;
   color: var(--color-text);
   text-align: left;
-  margin: auto;
-  bottom: 0;
+  position: relative;
+  top: 20vw;
   z-index: 2;
+  position: sticky;
   line-height: 7vh;
   align-self: center;
-}
-
-.name {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.name p {
-  position: sticky;
+  height: 50vw;
 }
 
 .webslingr {
@@ -1045,7 +1036,7 @@ nav .bar {
   width: 25px;
   height: 3px;
   border-radius: 20px;
-  margin: 5px auto;
+  margin: 3.5px auto;
   transition: all 0.3s ease-in-out;
   background-color: var(--color-text);
 }
@@ -1138,6 +1129,7 @@ button::-moz-focus-inner {
 footer {
   background: var(--bg);
   padding: 60px 0;
+  margin-top: 15vw;
 }
 
 .footer-bottom {
@@ -1151,7 +1143,10 @@ footer {
 }
 
 .social-media {
-  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vw;
 }
 
 .social-media a {
@@ -1257,58 +1252,79 @@ footer {
   .frontend, .backend, .other {
     flex-direction: column;
   }
-  .grid-container {
+  .frontend-text p, .backend-text p, .other-text p {
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color-text);
+    position: sticky;
+    top: 20vh;
+    margin-bottom: 44vw;
+    text-align: center;
+  }
+  .grid-container, .grid-container2, .grid-container3 {
     display: grid;
-    margin-top: 75%;
-    margin-left: 55%;
+    margin: auto;
     /* width: 40%; */
     /* justify-content: end; */
     /* grid-template-columns: repeat(4, 1fr); */
     row-gap: 30px;
     transform-style: preserve-3d;
-    margin-bottom: 340px;
+    margin-bottom: 50vh;
+  }
+  .grid-container p {
+    font-size: 3vw;
   }
   .tech1, .tech2, .tech3, .tech4, .tech5, .tech6, .tech7, .tech8, .tech9, .tech10 .tech11,
   .tech12, .tech13, .tech14 {
-    width: 23vw;
+    width: 15vw;
   }
   .tech1 {
-    position: relative;
-    left: 0;
+    left: 5vw;
   }
   .tech1 img {
     box-shadow: 0 0 0.9em 0.1em var(--bootstrap);
     border-radius: 20px;
+    height: 15vw;
+    width: 15vw;
   }
   .tech2 {
     bottom: 80%;
-    left: 20%;
+    left: 14vw;
   }
   .tech2 img {
     box-shadow: 0 0 0.9em 0.1em var(--html5);
     border-radius: 20px;
+    height: 15vw;
+    width: 15vw;
   }
   .tech3 {
-    left: 35%;
+    left: 14vw;
     top: 70%;
   }
   .tech3 img {
     box-shadow: 0 0 0.9em 0.1em var(--css3);
     border-radius: 20px;
+    height: 15vw;
+    width: 15vw;
   }
   .tech4 {
-    left: 25%;
+    left: 12vw;
   }
   .tech4 img {
     box-shadow: 0 0 0.9em 0.1em var(--javascript);
     border-radius: 20px;
+    height: 15vw;
+    width: 15vw;
   }
   .tech5 {
-    left: 45%;
+    left: 19vw;
   }
   .tech5 img {
     box-shadow: 0 0 0.9em 0.1em var(--react);
     border-radius: 20px;
+    height: 15vw;
+    width: 15vw;
   }
   .backend {
     display: flex;
@@ -1321,13 +1337,6 @@ footer {
     font-weight: 500;
     color: var(--color-text);
   }
-  .grid-container2 {
-    display: grid;
-    margin-top: 75%;
-    margin-left: 55%;
-    row-gap: 40px;
-    transform-style: preserve-3d;
-  }
   .grid-container2 p {
     color: var(--color-text);
     margin-top: 5%;
@@ -1336,71 +1345,58 @@ footer {
   }
   .tech6 {
     position: relative;
-    top: 40%;
-    left: 30%;
+    top: 51%;
+    left: 21vw;
   }
   .tech6 img {
     box-shadow: 0 0 0.9em 0.1em var(--mysql);
     border-radius: 20px;
+    width: 18vw;
   }
   .tech7 {
     bottom: 90%;
-    left: 20%;
+    left: 13vw;
   }
   .tech7 img {
     box-shadow: 0 0 0.9em 0.1em var(--node);
     border-radius: 20px;
+    height: 15vw;
+    width: 15vw;
   }
   .tech8 {
-    left: 35%;
+    left: 11vw;
     top: 40%;
-    margin-left: 25%;
   }
   .tech8 img {
     box-shadow: 0 0 0.9em 0.1em var(--nginx);
     border-radius: 20px;
+    width: 18vw;
   }
   .tech9 {
-    left: 25%;
+    left: 13vw;
   }
   .tech9 img {
     box-shadow: 0 0 0.9em 0.1em var(--apache);
     border-radius: 20px;
+    width: 18vw;
   }
   .tech10 {
-    left: 45%;
+    left: 33vw;
+    top: 105%;
   }
   .tech10 img {
     box-shadow: 0 0 0.9em 0.1em var(--php);
     border-radius: 20px;
+    width: 18vw;
   }
   .tech11 {
-    left: 45%;
-    top: 45%;
-    margin-left: 50%;
+    left: 42vw;
+    top: 139%;
   }
   .tech11 img {
     box-shadow: 0 0 0.9em 0.1em var(--dotnet);
     border-radius: 20px;
-  }
-  .grid-container {
-    display: grid;
-    margin-top: 75%;
-    margin-left: 55%;
-    /* width: 40%; */
-    /* justify-content: end; */
-    /* grid-template-columns: repeat(4, 1fr); */
-    row-gap: 30px;
-    transform-style: preserve-3d;
-    margin-bottom: 340px;
-  }
-  .grid-container3 {
-    display: grid;
-    margin-top: 75%;
-    margin-left: 35%;
-    row-gap: 30px;
-    transform-style: preserve-3d;
-    margin-bottom: 340px;
+    width: 18vw;
   }
   .grid-container3 p {
     color: var(--color-text);
@@ -1408,73 +1404,35 @@ footer {
     font-weight: bold;
     font-size: large;
   }
-  .tech6 {
-    position: relative;
-    left: 30%;
-  }
-  .tech6 img {
-    box-shadow: 0 0 0.9em 0.1em var(--mysql);
-    border-radius: 20px;
-  }
-  .tech7 {
-    bottom: 80%;
-    left: 20%;
-  }
-  .tech7 img {
-    box-shadow: 0 0 0.9em 0.1em var(--node);
-    border-radius: 20px;
-  }
-  .tech8 {
-    left: 35%;
-  }
-  .tech8 img {
-    box-shadow: 0 0 0.9em 0.1em var(--nginx);
-    border-radius: 20px;
-  }
-  .tech9 {
-    left: 25%;
-  }
-  .tech9 img {
-    box-shadow: 0 0 0.9em 0.1em var(--apache);
-    border-radius: 20px;
-  }
-  .tech10 {
-    left: 45%;
-  }
-  .tech10 img {
-    box-shadow: 0 0 0.9em 0.1em var(--php);
-    border-radius: 20px;
-  }
-  .tech11 {
-    left: 45%;
-  }
-  .tech11 img {
-    box-shadow: 0 0 0.9em 0.1em var(--dotnet);
-    border-radius: 20px;
-  }
   .tech12 {
-    left: 45%;
+    left: 0;
     bottom: 95%;
   }
   .tech12 img {
     box-shadow: 0 0 0.9em 0.1em var(--wordpress);
     border-radius: 20px;
+    height: 15vw;
+    width: 15vw;
   }
   .tech13 {
-    left: 45%;
+    left: 2vw;
     top: 15%;
   }
   .tech13 img {
     box-shadow: 0 0 0.9em 0.1em var(--drupal);
     border-radius: 20px;
+    height: 15vw;
+    width: 15vw;
   }
   .tech14 {
-    left: 45%;
+    left: 9vw;
     bottom: 85%;
   }
   .tech14 img {
     box-shadow: 0 0 0.9em 0.1em var(--postman);
     border-radius: 20px;
+    height: 15vw;
+    width: 15vw;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -1497,7 +1455,15 @@ footer {
 }
 @media only screen and (max-width: 767px) {
   nav {
-    margin-left: 5em;
+    flex-direction: row-reverse;
+    width: 30vw;
+  }
+  .dark-mode-toggle {
+    top: 7.5vw;
+    gap: 10vw;
+  }
+  #logo {
+    margin-left: 22vw;
   }
   .menu {
     overflow-y: hidden;
@@ -1506,19 +1472,22 @@ footer {
     top: -17px;
     flex-direction: column;
     background-color: var(--bg-section);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 999;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .menu.active {
-    right: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     touch-action: none;
   }
   .menu li {
-    font-size: 3rem;
+    font-size: 7vw;
   }
   nav .hamburger {
     display: block;
@@ -1529,41 +1498,31 @@ footer {
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
+    width: 10vw;
+    height: 1.5vw;
+    margin-top: 2vw;
     transform: translateY(8px) rotate(45deg);
   }
   .hamburger.active .bar:nth-child(3) {
+    width: 10vw;
+    height: 1.5vw;
     transform: translateY(-8px) rotate(-45deg);
   }
   .hamburger.active {
-    margin-left: 170px;
-  }
-  #dark-mode-toggle {
-    top: 43px;
-    right: 13px;
+    position: fixed;
+    left: 9.5vw;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .hero img {
-    width: 90%;
-    margin-top: 20%;
+  body {
+    border: 0 !important;
   }
-  section {
-    width: 100%;
-  }
-  .mouse {
-    width: 52px;
-    height: 73px;
-  }
-  .mouse:before {
-    width: 40px;
-    height: 63px;
-  }
-  .mouse:after {
-    width: 10px;
-    height: 10px;
+  #container3D {
+    width: 102vw;
+    height: 150vw;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 767px) {
   .hero img {
     width: 105vw;
     margin-top: 25%;
@@ -1573,6 +1532,9 @@ footer {
   }
   .name {
     font-size: large;
+  }
+  .scroll-area {
+    height: 400vh;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
@@ -1626,17 +1588,25 @@ footer {
     margin: auto;
   }
   .project-link {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 }
 @media only screen and (max-width: 767px) {
-  footer-bottom {
+  .footer-bottom {
     justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-direction: column-reverse;
+    gap: 30vw;
+  }
+  .social-media {
+    margin-left: 3.5vw;
   }
   .right-col h6 {
     font-size: 25px;
   }
   .rights-text {
-    width: 60vw;
+    font-size: 3vw;
+    text-align: center;
   }
 }/*# sourceMappingURL=dark.css.map */
