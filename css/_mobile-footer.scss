@@ -1,3 +1,28 @@
+// MEDIUM SCREEN
+@media (min-width:768px) and (max-width:992px) {
+    .footer-bottom {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        flex-direction: column-reverse;
+        gap: 30vw;
+    }
+
+    .social-media {
+        margin-left: 3.5vw;
+    }
+
+    .right-col h6 {
+        font-size: 25px;
+    }
+
+    .rights-text {
+        font-size: 1.9vw;
+        text-align: center;
+    }
+}
+
+
 //SMALL SCREEN
 
 @media only screen and (max-width: 767px) {
