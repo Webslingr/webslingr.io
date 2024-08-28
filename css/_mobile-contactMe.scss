@@ -1,27 +1,20 @@
-@media (max-width:992px) {
 
-}
+// MEDIUM SCREEN
+@media (min-width:768px) and (max-width:992px) {
 
-
-//MEDIUM SCREEN
-
-
-@media (max-width:767px) {
   
-    
-
-
 
 }
-
 
 //SMALL SCREEN
+// @media (max-width:500px) {
 
-@media (max-width:500px) {
+@media (max-width:767px) {
 
-   .logo{
-     padding-top: 40px;
+   #logo{
+     padding-top: 4vw;
      padding-bottom: 30px;
+     margin-left: 28vw;
    }
 
 
@@ -32,11 +25,13 @@
         h2{
             // font-size: 20px;
             color: var(--color-text);
-            margin-bottom: 16vh;
+            // margin-bottom: 16vh;
             margin-left: 9vw;
             text-align: left;
-            font-size: 40px;
+            // font-size: 40px;
+            font-size: 8vw;
             width: 79%;
+            margin-bottom: 5vh;
             // letter-spacing: 4px;
         }
 
@@ -46,6 +41,10 @@
 
   //FORM
 
+  .name, .email, .message {
+    margin-bottom: 2vh;
+  }
+
   .nameField, .emailField, .messageField{
         
     small{
@@ -54,6 +53,10 @@
 
   }  
 
+  .contact-section button {
+    font-size: 3.5vw;
+    padding: 19px 20px;
+  }
 
 
   //FOOTER
