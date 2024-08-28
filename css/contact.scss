@@ -308,7 +308,13 @@ html.transition *:after{
     transition-delay: 0 !important;
 }
 
+
+// Main CSS
 @import "header";
 @import "footer";
-@import "mobile-contactMe";
 @import "backToTopButton";
+
+
+// Mobile CSS
+@import "mobile-contactMe";
+@import "mobile-footer";

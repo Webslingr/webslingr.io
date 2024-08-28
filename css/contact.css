@@ -423,45 +423,6 @@ footer {
   background: #fc5c65;
 }
 
-@media (max-width: 767px) {
-  #logo {
-    padding-top: 4vw;
-    padding-bottom: 30px;
-    margin-left: 28vw;
-  }
-  .contact-section h2 {
-    color: var(--color-text);
-    margin-left: 9vw;
-    text-align: left;
-    font-size: 8vw;
-    width: 79%;
-    margin-bottom: 5vh;
-  }
-  .name, .email, .message {
-    margin-bottom: 2vh;
-  }
-  .nameField small, .emailField small, .messageField small {
-    margin-left: 5%;
-  }
-  .contact-section button {
-    font-size: 3.5vw;
-    padding: 19px 20px;
-  }
-  .footer-bottom {
-    padding: 0 60px;
-  }
-  .right-col {
-    margin-top: 10%;
-  }
-  .right-col h6 {
-    font-size: 37px;
-    color: var(--color-text);
-  }
-  .right-col #contact {
-    padding: 8px 16px;
-    font-size: 17px;
-  }
-}
 #back-to-top-btn {
   display: none;
   position: fixed;
@@ -519,5 +480,97 @@ footer {
   to {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  nav {
+    display: block;
+    width: 100%;
+  }
+  #logo {
+    padding-top: 4vw;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+    font-size: 2.6vw;
+  }
+  .dark-mode-toggle {
+    margin-top: 1.5vh;
+  }
+  .contact-section h2 {
+    font-size: 38px;
+    margin-bottom: 9vh;
+  }
+  .name, .email, .message {
+    padding: 14px 16px;
+    margin-bottom: 3vh;
+  }
+  .contact-section button {
+    font-size: 2.1vw;
+    padding: 18px 25px;
+  }
+}
+@media (max-width: 767px) {
+  #logo {
+    padding-top: 4vw;
+    padding-bottom: 30px;
+    margin-left: 28vw;
+  }
+  .contact-section h2 {
+    color: var(--color-text);
+    margin-left: 9vw;
+    text-align: left;
+    font-size: 8vw;
+    width: 79%;
+    margin-bottom: 5vh;
+  }
+  .name, .email, .message {
+    margin-bottom: 2vh;
+    padding: 10px 16px;
+  }
+  .nameField small, .emailField small, .messageField small {
+    margin-left: 5%;
+  }
+  .contact-section button {
+    font-size: 3.5vw;
+    padding: 19px 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer-bottom {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-direction: column-reverse;
+    gap: 30vw;
+  }
+  .social-media {
+    margin-left: 3.5vw;
+  }
+  .right-col h6 {
+    font-size: 25px;
+  }
+  .rights-text {
+    font-size: 1.9vw;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-bottom {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex-direction: column-reverse;
+    gap: 30vw;
+  }
+  .social-media {
+    margin-left: 3.5vw;
+  }
+  .right-col h6 {
+    font-size: 25px;
+  }
+  .rights-text {
+    font-size: 3vw;
+    text-align: center;
   }
 }/*# sourceMappingURL=contact.css.map */
