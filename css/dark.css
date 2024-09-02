@@ -1204,7 +1204,18 @@ footer {
   background: #fc5c65;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #container3D {
+    width: 100vw;
+    height: 150vw;
+  }
+  #canvas {
+    height: 1150px !important;
+  }
+  .scroll-area {
+    height: 400vh;
+    animation: animate 5s ease infinite;
+  }
   title {
     width: 95%;
   }
@@ -1218,6 +1229,51 @@ footer {
   h3 {
     text-align: center;
     margin-top: 35vh;
+    font-size: 5vw;
+  }
+  .name {
+    top: 50vh;
+  }
+  .frontend-text {
+    height: 90vh;
+  }
+  .backend-text {
+    height: 32vh;
+  }
+  .other-text {
+    height: 40vh;
+  }
+  .grid-container {
+    margin-top: 100vw;
+  }
+  .grid-container p, .grid-container2 p, .grid-container3 p {
+    font-weight: 500;
+    font-size: 1.5vw;
+  }
+  .tech1, .tech2, .tech3, .tech4, .tech5, .tech6, .tech7, .tech8, .tech9, .tech10,
+  .tech11, .tech12, .tech13, .tech14 {
+    width: 9vw;
+  }
+  .tech6 {
+    left: 0;
+  }
+  .tech8 {
+    top: 36%;
+  }
+  .tech11 {
+    left: 97%;
+    top: 50%;
+  }
+  .tech12 {
+    margin-top: 14vw;
+    left: 4vw;
+  }
+  .tech14 {
+    left: 5vw;
+    top: 16vw;
+  }
+  .other {
+    margin-bottom: 70vh;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1435,22 +1491,72 @@ footer {
     width: 15vw;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  #logo {
-    margin-right: 38%;
-  }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   nav {
-    justify-content: end;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-top: 1.2vh;
+  }
+  .mobile-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 2vh;
+  }
+  #logo {
+    padding-top: 0.5%;
+    margin-left: 31.5vw;
   }
   .dark-mode-toggle {
-    margin-right: 24px;
+    top: 7.5vw;
+    gap: 10vw;
+  }
+  .menu {
+    overflow-y: hidden;
+    position: fixed;
+    right: 100%;
+    top: -17px;
+    flex-direction: column;
+    background-color: var(--bg-section);
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .menu.active {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    touch-action: none;
+  }
+  .menu li {
+    font-size: 7vw;
+  }
+  nav .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    width: 5vw;
+    height: 0.5vw;
+    margin-top: 2vw;
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    width: 5vw;
+    height: 0.5vw;
+    transform: translateY(-8px) rotate(-45deg);
+    margin-top: 14%;
   }
   .hamburger.active {
-    margin-left: 140px;
-    margin-top: 50px;
-  }
-  .dark-mode-toggle {
-    right: 0;
+    position: fixed;
+    left: 9.5vw;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1516,10 +1622,6 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   body {
     border: 0 !important;
-  }
-  #container3D {
-    width: 102vw;
-    height: 150vw;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1597,10 +1699,11 @@ footer {
     align-items: center;
     padding: 0;
     flex-direction: column-reverse;
-    gap: 30vw;
+    gap: 14vw;
   }
   .social-media {
     margin-left: 3.5vw;
+    margin-bottom: 2vw;
   }
   .right-col h6 {
     font-size: 25px;

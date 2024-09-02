@@ -1,7 +1,22 @@
 //MEDIUM SCREEN
 
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width:768px) and (max-width:992px) {
+  
+
+  #container3D {
+    width: 100vw;
+    height: 150vw;
+  }
+
+  #canvas {
+    height: 1150px !important;
+  }
+
+  .scroll-area {
+    height: 400vh;
+    animation: animate 5s ease infinite;
+  }
   
     title{
         width: 95%;
@@ -15,11 +30,87 @@
         margin-bottom: 1vh;
     }
 
-
     h3{
       text-align: center;
       margin-top: 35vh;
+      font-size: 5vw;
     }
+
+    .name {
+      top: 50vh;
+    }
+
+    // TECHS
+
+    // .frontend-text {
+    //   height: 150vh;
+    // }
+
+    .frontend-text {
+      height: 90vh;
+    }
+
+    .backend-text {
+      height: 32vh;
+    }
+
+    .other-text {
+      height: 40vh;
+    }
+
+    .grid-container {
+      margin-top: 100vw;
+    }
+
+    .grid-container, .grid-container2, .grid-container3 {
+
+      p {
+        font-weight: 500;
+        font-size: 1.5vw;
+      }
+    }
+
+    .tech1, .tech2, .tech3, .tech4, .tech5, .tech6, .tech7, .tech8, .tech9, .tech10,
+    .tech11, .tech12, .tech13, .tech14 {
+      width: 9vw;
+    }
+
+    // MYSQL
+    .tech6 {
+      left: 0;
+    }
+
+    // NGINX
+    .tech8 {
+      top: 36%;
+    }
+
+    // DOTNET
+    .tech11 {
+      left: 97%;
+      top: 50%;
+    }
+
+    // WORDPRESS
+    .tech12 {
+      margin-top: 14vw;
+      left: 4vw;
+    }
+
+    // POSTMAN
+    .tech14 {
+      left: 5vw;
+      top: 16vw;
+    }
+
+    // .tech2 {
+    //   bottom: 38%;
+    // }
+
+    .other {
+      margin-bottom: 70vh;
+    }
+
 
 }
 
