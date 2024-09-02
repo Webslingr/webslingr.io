@@ -9,9 +9,11 @@ footer{
     margin: auto;
     padding: 0 120px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    // justify-content: space-between;
     align-items: center;
     flex-wrap: wrap-reverse;
+    gap: 10vw;
 }
 
 .social-media{
@@ -19,7 +21,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10vw;
+  margin-bottom: 2vw;
 }
 
 .social-media a{

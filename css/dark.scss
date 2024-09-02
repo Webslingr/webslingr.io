@@ -280,19 +280,29 @@ canvas {
     margin-bottom: 40px;
 }
 
-.grid-container p {
-    color: var(--color-text);
-    // margin-top: 3vw;
-    font-weight: bold;
-    font-size: large;
-}
+// .grid-container p {
+//     color: var(--color-text);
+//     // margin-top: 3vw;
+//     font-weight: bold;
+//     font-size: large;
+// }
+
+
+.grid-container, .grid-container2, .grid-container3 {
+
+    p {
+        color: var(--color-text);
+      font-weight: 500;
+      font-size: 1vw;
+    }
+  }
 
 .tech1 {
     // position: absolute;
     position: relative;
     // margin-top: 20vh;
     left: 0;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--bootstrap);
@@ -307,7 +317,7 @@ canvas {
     // margin-top: 40vh;
     bottom: 80%;
     left: 20%;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--html5);
@@ -321,7 +331,7 @@ canvas {
     // margin-top: 40vh;
     top: 9vw;
     left: 35%;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--css3);
@@ -335,7 +345,7 @@ canvas {
     position: relative;
     // margin-top: 40vh;
     left: 25%;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--javascript);
@@ -349,7 +359,7 @@ canvas {
     // margin-top: 40vh;
     top: 8vw;
     left: 45%;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--react);
@@ -405,19 +415,19 @@ canvas {
     margin-bottom: 340px;
 }
 
-.grid-container2 p {
-    color: var(--color-text);
-    margin-top: 5%;
-    font-weight: bold;
-    font-size: large;
-}
+// .grid-container2 p {
+//     color: var(--color-text);
+//     margin-top: 5%;
+//     font-weight: bold;
+//     font-size: large;
+// }
 
 .tech6 {
     // position: absolute;
     position: relative;
     // margin-top: 10vw;
     left: 30%;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--mysql);
@@ -432,7 +442,7 @@ canvas {
     // margin-top: 40vh;
     bottom: 80%;
     left: 20%;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--node);
@@ -445,7 +455,7 @@ canvas {
     position: relative;
     // margin-top: 40vh;
     left: 35%;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--nginx);
@@ -459,7 +469,7 @@ canvas {
     position: relative;
     // margin-top: 40vh;
     left: 25%;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--apache);
@@ -472,7 +482,7 @@ canvas {
     position: relative;
     // margin-top: 40vh;
     left: 45%;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--php);
@@ -485,7 +495,7 @@ canvas {
     position: relative;
     // margin-top: 40vh;
     left: 45%;
-    width: 105px;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--dotnet);
@@ -502,7 +512,8 @@ canvas {
     display: flex;
     // margin-top: 340px;
     margin-top: 30vw;
-    margin-bottom: 90vw;
+    // margin-bottom: 90vw;
+    margin-bottom: 26vw;
     // margin-bottom: 150px;
     justify-content: space-evenly;
     position: sticky;
@@ -510,7 +521,8 @@ canvas {
 }
 
 .other-text{
-    height: 70vh;
+    // height: 70vh;
+    height: 85vh;
 }
 
 
@@ -537,19 +549,19 @@ canvas {
     // margin-bottom: 100vw;
 }
 
-.grid-container3 p {
-    color: var(--color-text);
-    margin-top: 5%;
-    font-weight: bold;
-    font-size: large;
-}
+// .grid-container3 p {
+//     color: var(--color-text);
+//     margin-top: 5%;
+//     font-weight: bold;
+//     font-size: large;
+// }
 
 // .tech6 {
 //     // position: absolute;
 //     position: relative;
 //     // margin-top: 20vh;
 //     left: 30%;
-//     width: 105px;
+//     width: 6vw;
 
 //     img {
 //         box-shadow: 0 0 0.9em 0.1em var(--mysql);
@@ -564,7 +576,7 @@ canvas {
 //     // margin-top: 40vh;
 //     bottom: 80%;
 //     left: 20%;
-//     width: 105px;
+//     width: 6vw;
 
 //     img {
 //         box-shadow: 0 0 0.9em 0.1em var(--node);
@@ -577,7 +589,7 @@ canvas {
 //     position: relative;
 //     // margin-top: 40vh;
 //     left: 35%;
-//     width: 105px;
+//     width: 6vw;
 
 //     img {
 //         box-shadow: 0 0 0.9em 0.1em var(--nginx);
@@ -591,7 +603,7 @@ canvas {
 //     position: relative;
 //     // margin-top: 40vh;
 //     left: 25%;
-//     width: 105px;
+//     width: 6vw;
 
 //     img {
 //         box-shadow: 0 0 0.9em 0.1em var(--apache);
@@ -604,7 +616,7 @@ canvas {
 //     position: relative;
 //     // margin-top: 40vh;
 //     left: 45%;
-//     width: 105px;
+//     width: 6vw;
 
 //     img {
 //         box-shadow: 0 0 0.9em 0.1em var(--php);
@@ -617,7 +629,7 @@ canvas {
 //     position: relative;
 //     // margin-top: 40vh;
 //     left: 45%;
-//     width: 105px;
+//     width: 6vw;
 
 //     img {
 //         box-shadow: 0 0 0.9em 0.1em var(--dotnet);
@@ -630,7 +642,7 @@ canvas {
     position: relative;
     margin-top: 4vw;
     left: 4vw;
-    width:7.5vw;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--wordpress);
@@ -643,7 +655,7 @@ canvas {
     position: relative;
     // margin-top: 40vh;
     left: 5vw;
-    width:7.5vw;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--drupal);
@@ -656,7 +668,7 @@ canvas {
     position: relative;
     // margin-top: 40vh;
     left: 5vw;
-    width:7.5vw;
+    width: 6vw;
 
     img {
         box-shadow: 0 0 0.9em 0.1em var(--postman);

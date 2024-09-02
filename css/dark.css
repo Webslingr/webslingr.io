@@ -126,16 +126,16 @@ canvas {
   margin-bottom: 40px;
 }
 
-.grid-container p {
+.grid-container p, .grid-container2 p, .grid-container3 p {
   color: var(--color-text);
-  font-weight: bold;
-  font-size: large;
+  font-weight: 500;
+  font-size: 1vw;
 }
 
 .tech1 {
   position: relative;
   left: 0;
-  width: 105px;
+  width: 6vw;
 }
 .tech1 img {
   box-shadow: 0 0 0.9em 0.1em var(--bootstrap);
@@ -146,7 +146,7 @@ canvas {
   position: relative;
   bottom: 80%;
   left: 20%;
-  width: 105px;
+  width: 6vw;
 }
 .tech2 img {
   box-shadow: 0 0 0.9em 0.1em var(--html5);
@@ -157,7 +157,7 @@ canvas {
   position: relative;
   top: 9vw;
   left: 35%;
-  width: 105px;
+  width: 6vw;
 }
 .tech3 img {
   box-shadow: 0 0 0.9em 0.1em var(--css3);
@@ -167,7 +167,7 @@ canvas {
 .tech4 {
   position: relative;
   left: 25%;
-  width: 105px;
+  width: 6vw;
 }
 .tech4 img {
   box-shadow: 0 0 0.9em 0.1em var(--javascript);
@@ -178,7 +178,7 @@ canvas {
   position: relative;
   top: 8vw;
   left: 45%;
-  width: 105px;
+  width: 6vw;
 }
 .tech5 img {
   box-shadow: 0 0 0.9em 0.1em var(--react);
@@ -217,17 +217,10 @@ canvas {
   margin-bottom: 340px;
 }
 
-.grid-container2 p {
-  color: var(--color-text);
-  margin-top: 5%;
-  font-weight: bold;
-  font-size: large;
-}
-
 .tech6 {
   position: relative;
   left: 30%;
-  width: 105px;
+  width: 6vw;
 }
 .tech6 img {
   box-shadow: 0 0 0.9em 0.1em var(--mysql);
@@ -238,7 +231,7 @@ canvas {
   position: relative;
   bottom: 80%;
   left: 20%;
-  width: 105px;
+  width: 6vw;
 }
 .tech7 img {
   box-shadow: 0 0 0.9em 0.1em var(--node);
@@ -248,7 +241,7 @@ canvas {
 .tech8 {
   position: relative;
   left: 35%;
-  width: 105px;
+  width: 6vw;
 }
 .tech8 img {
   box-shadow: 0 0 0.9em 0.1em var(--nginx);
@@ -258,7 +251,7 @@ canvas {
 .tech9 {
   position: relative;
   left: 25%;
-  width: 105px;
+  width: 6vw;
 }
 .tech9 img {
   box-shadow: 0 0 0.9em 0.1em var(--apache);
@@ -268,7 +261,7 @@ canvas {
 .tech10 {
   position: relative;
   left: 45%;
-  width: 105px;
+  width: 6vw;
 }
 .tech10 img {
   box-shadow: 0 0 0.9em 0.1em var(--php);
@@ -278,7 +271,7 @@ canvas {
 .tech11 {
   position: relative;
   left: 45%;
-  width: 105px;
+  width: 6vw;
 }
 .tech11 img {
   box-shadow: 0 0 0.9em 0.1em var(--dotnet);
@@ -288,13 +281,13 @@ canvas {
 .other {
   display: flex;
   margin-top: 30vw;
-  margin-bottom: 90vw;
+  margin-bottom: 26vw;
   justify-content: space-evenly;
   position: sticky;
 }
 
 .other-text {
-  height: 70vh;
+  height: 85vh;
 }
 
 .other-text p {
@@ -317,18 +310,11 @@ canvas {
   transform-style: preserve-3d;
 }
 
-.grid-container3 p {
-  color: var(--color-text);
-  margin-top: 5%;
-  font-weight: bold;
-  font-size: large;
-}
-
 .tech12 {
   position: relative;
   margin-top: 4vw;
   left: 4vw;
-  width: 7.5vw;
+  width: 6vw;
 }
 .tech12 img {
   box-shadow: 0 0 0.9em 0.1em var(--wordpress);
@@ -338,7 +324,7 @@ canvas {
 .tech13 {
   position: relative;
   left: 5vw;
-  width: 7.5vw;
+  width: 6vw;
 }
 .tech13 img {
   box-shadow: 0 0 0.9em 0.1em var(--drupal);
@@ -348,7 +334,7 @@ canvas {
 .tech14 {
   position: relative;
   left: 5vw;
-  width: 7.5vw;
+  width: 6vw;
 }
 .tech14 img {
   box-shadow: 0 0 0.9em 0.1em var(--postman);
@@ -1015,6 +1001,9 @@ nav ul {
   flex: 1;
   list-style: none;
 }
+nav .mobile-header {
+  display: contents;
+}
 nav h1 {
   font-size: 18px;
   font-weight: bold;
@@ -1137,16 +1126,17 @@ footer {
   margin: auto;
   padding: 0 120px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   align-items: center;
   flex-wrap: wrap-reverse;
+  gap: 10vw;
 }
 
 .social-media {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10vw;
+  margin-bottom: 2vw;
 }
 
 .social-media a {

@@ -234,6 +234,9 @@ nav ul {
   flex: 1;
   list-style: none;
 }
+nav .mobile-header {
+  display: contents;
+}
 nav h1 {
   font-size: 18px;
   font-weight: bold;
@@ -356,16 +359,17 @@ footer {
   margin: auto;
   padding: 0 120px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   align-items: center;
   flex-wrap: wrap-reverse;
+  gap: 10vw;
 }
 
 .social-media {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10vw;
+  margin-bottom: 2vw;
 }
 
 .social-media a {
