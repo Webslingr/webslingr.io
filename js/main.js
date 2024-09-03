@@ -383,7 +383,7 @@ var scale = 0.1;
 
 // LOAD THE BLOB
 const loader = new FBXLoader();
-const body_01 = await loader.loadAsync( '../model/head/body.fbx');
+const body_01 = await loader.loadAsync( '../webslingr.io/model/head/body.fbx');
 
 // ADD AN ANIMATION MIXER TO LOAD THE FILE'S ANIMATION
 body_01_mixer = new THREE.AnimationMixer( body_01 );
