@@ -35,9 +35,9 @@
       <div class="inner-width">
         <h2>Get In Touch - Let's work together.</h2>
         
-        <div class="form-control">
+        <form action="https://formsubmit.co/09cc02806e107319d9e903efb7748377" method="POST">
           <p>Name</p>
-          <input type="text" class="name" id="txtName" onblur="validateName()" placeholder="Murugan Krishnan" autocomplete="off" required />
+          <input type="text" name="name" class="name" id="txtName" onblur="validateName()" placeholder="Murugan Krishnan" autocomplete="off" required />
           <br>
           <div id="txtNameError"></div>
           <!-- <div class="nameField">
@@ -47,7 +47,7 @@
           </div> -->
           
           <p>Email</p>
-          <input type="mail" class="email" id="txtEmail" onblur="validateEmail()" placeholder="name@address.com" autocomplete="off" required />
+          <input type="email" name="email" class="email" id="txtEmail" onblur="validateEmail()" placeholder="name@address.com" autocomplete="off" required />
           <br>
           <div id="txtEmailError"></div>
           <!-- <div class="emailField">
@@ -57,7 +57,7 @@
           </div> -->
 
           <p>Message</p>
-          <textarea rows="8" placeholder="" id="txtMessage" onblur="validateMessage()" class="message" autocomplete="off" required></textarea>
+          <textarea rows="8" name="message" placeholder="" id="txtMessage" onblur="validateMessage()" class="message" autocomplete="off" required></textarea>
           <br>
           <div id="txtMessageError"></div>
           <!-- <div class="messageField">
@@ -66,9 +66,8 @@
             <small>Error message</small>
           </div> -->
         
-        </div>
-
-        <button id="btnSendMessage" onclick="validateForm()">Send message</button>
+          <button id="btnSendMessage" onclick="validateForm()" type="submit">Send message</button>
+        </form>
 
       </div>    
     </div>
